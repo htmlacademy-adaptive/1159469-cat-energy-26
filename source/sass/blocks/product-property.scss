@@ -1,0 +1,10 @@
+.product-property {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.product-property__price {
+  margin: 0;
+  text-transform: uppercase;
+}

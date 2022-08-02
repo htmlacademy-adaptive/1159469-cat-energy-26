@@ -1,0 +1,33 @@
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $basicGreen;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basicGreen2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button-light {
+  color: $specialDarkGrey;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $basicGrey;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $specialGrey2;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

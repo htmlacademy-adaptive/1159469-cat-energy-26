@@ -1,3 +1,11 @@
+.contacts {
+  background-color: #ffffff;
+}
+
+.contacts--background {
+  background-color: $basicGrey;
+}
+
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -19,7 +27,7 @@
   width: 139px;
   margin: 0;
   font-family: "Arial", sans-serif;
-  color: $specialGrey;
+  color: $specialDarkGrey;
   font-size: 14px;
   line-height: 20px;
 }
