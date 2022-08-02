@@ -1,5 +1,5 @@
 .results {
-  background-color: #eaeaea;
+  background-color: $basicGrey2;
   color: #000000;
 }
 
@@ -22,7 +22,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $specialDarkGrey;
 }
 
 .results__list {
@@ -49,7 +49,7 @@
 .results__description {
   font-size: 14px;
   line-height: 14px;
-  color: #444444;
+  color: $specialGrey;
   text-transform: lowercase;
 }
 

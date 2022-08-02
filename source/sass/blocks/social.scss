@@ -9,4 +9,12 @@
 
 .social__item {
   width: 28px;
+
+  &:hover .social__icon {
+    fill: $basicGreen;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }

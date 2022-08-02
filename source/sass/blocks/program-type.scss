@@ -15,7 +15,7 @@
 
 .program-type__item {
   padding: 30px 33px 19px 20px;
-  background-color: #f2f2f2;
+  background-color: $basicGrey;
   color: #000000;
 }
 
@@ -34,7 +34,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $specialGrey;
 }
 
 .program-type__link {
