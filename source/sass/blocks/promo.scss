@@ -1,0 +1,38 @@
+.promo {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__image {
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+}

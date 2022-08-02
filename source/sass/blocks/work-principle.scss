@@ -1,0 +1,33 @@
+.work-principle__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+}
+
+.work-principle__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.work-principle__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.work-principle__item {
+  padding-left: 80px;
+}
+
+.work-principle__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

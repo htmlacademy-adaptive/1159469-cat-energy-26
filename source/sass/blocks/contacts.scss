@@ -1,0 +1,25 @@
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__title {
+  width: 139px;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 139px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+}
