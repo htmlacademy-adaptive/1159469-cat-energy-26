@@ -16,18 +16,16 @@
 }
 
 .contacts__title {
+  @include fontStyle(16px, 20px);
   width: 139px;
   color: #111111;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
 }
 
 .contacts__address {
+  @include fontStyle(14px, 20px);
   width: 139px;
   margin: 0;
   font-family: "Arial", sans-serif;
   color: $specialDarkGrey;
-  font-size: 14px;
-  line-height: 20px;
 }

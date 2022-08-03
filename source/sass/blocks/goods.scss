@@ -4,11 +4,10 @@
 }
 
 .goods__title {
+  @include fontStyle(36px, 36px);
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .goods__list {

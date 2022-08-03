@@ -32,20 +32,18 @@
 }
 
 .promo__title {
+  @include fontStyle(36px, 36px);
   margin: 0;
   margin-bottom: 25px;
   color: #ffffff;
-  font-size: 36px;
-  line-height: 36px;
   text-align: center;
 }
 
 .promo__text {
+  @include fontStyle(14px, 14px);
   margin: 0;
   margin-bottom: 29px;
   color: #ffffff;
-  font-size: 14px;
-  line-height: 14px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -57,5 +55,6 @@
 .promo__link {
   display: block;
   box-sizing: border-box;
+  padding: 7px 0;
   text-decoration: none;
 }

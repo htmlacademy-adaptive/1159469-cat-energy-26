@@ -1,24 +1,21 @@
 .additional-product__title {
+  @include fontStyle(16px, 16px);
   margin: 0;
   margin-bottom: 13px;
   color: $specialDarkGrey2;
-  font-size: 16px;
-  line-height: 16px;
   text-transform: uppercase;
 }
 
 .additional-product__list {
+  @include fontStyle(14px, 14px);
   margin: 0;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
   color: $specialDarkGrey;
 }
 
 .additional-product__button {
+  @include fontStyle(16px, 20px);
   width: 100%;
   padding: 10px 0;
   font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
 }

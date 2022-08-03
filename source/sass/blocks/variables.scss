@@ -10,3 +10,8 @@ $specialDarkGrey: #444444;
 $specialDarkGrey2: #222222;
 $statusError: #ff8282;
 
+// === Mixin ===
+@mixin fontStyle($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

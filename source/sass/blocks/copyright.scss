@@ -4,9 +4,8 @@
 }
 
 .copyright__link {
+  @include fontStyle(16px, 18px);
   font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
   color: $specialDarkGrey;
   text-decoration: none;
   display: flex;

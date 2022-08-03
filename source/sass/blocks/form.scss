@@ -1,0 +1,31 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form__label {
+  @include fontStyle(16px, 18px);
+  text-transform: uppercase;
+}
+
+.form__legend {
+  @include fontStyle(24px, 26px);
+}
+
+.form__button {
+  @include fontStyle(16px, 20px);
+  width: 100%;
+  padding: 7px 0;
+  font-family: inherit;
+}
+
+.form__footnote {
+  @include fontStyle(14px, 16px);
+  display: block;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
