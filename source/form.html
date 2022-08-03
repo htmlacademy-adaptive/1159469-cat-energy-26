@@ -41,46 +41,77 @@
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset field">
               <legend class="visually-hidden">Введите данные вашего кота.</legend>
-              <label class="form__label" for="cat-name">Имя:*</label>
-              <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
-              <label class="form__label" for="cat-weight">Вес (кг):*</label>
-              <input class="form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required>
-              <label class="form__label" for="cat-age">Возраст (лет):</label>
-              <input class="form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+              <div class="field__wrapper">
+                <label class="field__label" for="cat-name">Имя:*</label>
+                <input class="field__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+              </div>
+              <div class="field__wrapper">
+                <label class="field__label" for="cat-weight">Вес (кг):*</label>
+                <input class="field__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required>
+              </div>
+              <div class="field__wrapper">
+                <label class="field__label" for="cat-age">Возраст (лет):</label>
+                <input class="field__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+              </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset radio">
               <legend class="visually-hidden">Выберите программу питания для вашего кота.</legend>
-              <input class="form__input" id="slim" type="radio" name="type-of-program" value="slim" checked>
-              <label class="form__label" for="slim">Похудение</label>
-              <input class="form__input" id="pro" type="radio" name="type-of-program" value="pro">
-              <label class="form__label" for="pro">Набор массы</label>
-              <input class="form__input" id="dont-know" type="radio" name="type-of-program" value="dont-know">
-              <label class="form__label" for="dont-know">Не знаю (нужен ваш совет)</label>
+              <label class="radio__wrapper">
+                <input class="radio__control" type="radio" name="type-of-program" value="slim" checked>
+                <span class="radio__mark"></span>
+                <span class="radio__label">Похудение</span>
+              </label>
+              <label class="radio__wrapper">
+                <input class="radio__control" type="radio" name="type-of-program" value="pro">
+                <span class="radio__mark"></span>
+                <span class="radio__label">Набор массы</span>
+              </label>
+              <label class="radio__wrapper">
+                <input class="radio__control" type="radio" name="type-of-program" value="dont-know">
+                <span class="radio__mark"></span>
+                <span class="radio__label">Не знаю (нужен ваш совет)</span>
+              </label>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset field ">
               <legend class="form__legend">Контактные данные владельца кота</legend>
-              <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-              <label class="form__label" for="phone">Телефон:*</label>
-              <input class="form__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              <div class="field__wrapper">
+                <label class="field__label" for="email">E-mail:*</label>
+                <input class="field__input field__input--icon_mail" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="field__wrapper">
+                <label class="field__label" for="phone">Телефон:*</label>
+                <input class="field__input field__input--icon_phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </div>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset comment">
               <legend class="form__legend">Комментарий</legend>
-              <label class="form__label" for="comment"></label>
-              <textarea class="form__textarea" id="comment" name="comment" placeholder="Раскажите обо всех повадках кота"></textarea>
+              <label class="comment__label" for="comment"></label>
+              <textarea class="comment__textarea" id="comment" name="comment" placeholder="Раскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset checkbox">
               <legend class="form__legend">Дополнительно</legend>
-              <input class="form__input" id="sweetener" type="checkbox" name="sweetener" checked>
-              <label class="form__label" for="sweetener">Сахарозаменитель</label>
-              <input class="form__input" id="water" type="checkbox" name="water">
-              <label class="form__label" for="water">Питьевая вода</label>
-              <input class="form__input" id="milk" type="checkbox" name="milk">
-              <label class="form__label" for="milk">Молоко</label>
-              <input class="form__input" id="vitamins" type="checkbox" name="vitamins">
-              <label class="form__label" for="vitamins">Витамины</label>
+              <label class="checkbox__wrapper">
+                <input class="checkbox__input" type="checkbox" name="sweetener">
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Сахарозаменитель</span>
+              </label>
+              <label class="checkbox__wrapper">
+                <input class="checkbox__input" type="checkbox" name="water">
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Питьевая вода</span>
+              </label>
+              <label class="checkbox__wrapper">
+                <input class="checkbox__input" type="checkbox" name="milk">
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Молоко</span>
+              </label>
+              <label class="checkbox__wrapper">
+                <input class="checkbox__input" type="checkbox" name="vitamins">
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Витамины</span>
+              </label>
             </fieldset>
             <button class="form__button button" type="submit">Отправить заявку</button>
             <small class="form__footnote">* — Обязательные поля</small>
@@ -94,9 +125,7 @@
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
-        <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3010207851567!2d30.322275758280124!3d59.938745446822324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1659225952213!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <img class="contacts__map" src="./img/location.png" width="320" height="362" alt="Наше местоположение на карте.">
       </div>
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">

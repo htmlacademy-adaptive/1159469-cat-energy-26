@@ -1,0 +1,23 @@
+.field__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.field__label {
+  @include fontStyle(16px, 18px);
+  text-transform: uppercase;
+  color: $specialDarkGrey;
+}
+
+.field__input {
+  @include fontStyle(16px, 18px);
+  font-family: inherit;
+  margin-left: 12px;
+  padding: 14px 0 14px 15px;
+  text-transform: uppercase;
+  color: $specialDarkGrey;
+  border: 1px solid #e7e7e7;
+  flex-grow: 1;
+}
