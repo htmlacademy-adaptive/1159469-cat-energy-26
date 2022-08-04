@@ -6,6 +6,7 @@
 
 .additional-goods__title {
   @include fontStyle(24px, 24px);
+  font-weight: 400;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 36px;

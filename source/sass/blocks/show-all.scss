@@ -1,5 +1,6 @@
 .show-all__title {
   @include fontStyle(16px, 20px);
+  font-weight: 400;
   display: block;
   margin-bottom: 8px;
   text-transform: uppercase;

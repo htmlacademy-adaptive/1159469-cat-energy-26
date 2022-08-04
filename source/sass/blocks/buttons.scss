@@ -1,5 +1,5 @@
 .button {
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
   background-color: $basicGreen;
@@ -7,27 +7,23 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $basicGreen2;
+    background-color: $appleGreen;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba($white, 0.3);
   }
 }
 
-.button-light {
-  color: $specialDarkGrey;
-  text-transform: uppercase;
-  text-align: center;
+.button--light {
+  color: $tundora;
   background-color: $basicGrey;
-  border: none;
-  cursor: pointer;
 
   &:hover {
-    background-color: $specialGrey2;
+    background-color: $galleryGrey;
   }
 
   &:active {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba($tundora, 0.3);
   }
 }

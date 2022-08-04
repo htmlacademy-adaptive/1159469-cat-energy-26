@@ -6,6 +6,7 @@
 
 .work-principle__title {
   @include fontStyle(36px, 40px);
+  font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -27,5 +28,5 @@
   @include fontStyle(14px, 18px);
   margin: 0;
   font-family: "Arial", sans-serif;
-  color: $specialDarkGrey;
+  color: $tundora;
 }

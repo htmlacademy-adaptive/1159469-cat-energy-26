@@ -1,5 +1,5 @@
 .contacts {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .contacts--background {
@@ -17,8 +17,9 @@
 
 .contacts__title {
   @include fontStyle(16px, 20px);
+  font-weight: 400;
   width: 139px;
-  color: #111111;
+  color: $codGrey;
   text-transform: uppercase;
 }
 
@@ -27,7 +28,7 @@
   width: 139px;
   margin: 0;
   font-family: "Arial", sans-serif;
-  color: $specialDarkGrey;
+  color: $tundora;
 }
 
 .contacts__map {

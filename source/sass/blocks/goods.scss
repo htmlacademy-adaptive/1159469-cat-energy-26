@@ -5,6 +5,7 @@
 
 .goods__title {
   @include fontStyle(36px, 36px);
+  font-weight: 400;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;

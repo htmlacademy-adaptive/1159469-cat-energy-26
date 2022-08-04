@@ -1,6 +1,6 @@
 .results {
-  background-color: $basicGrey2;
-  color: #000000;
+  background-color: $baseGalleryGrey;
+  color: $black;
 }
 
 .results__wrapper {
@@ -11,6 +11,7 @@
 
 .results__title {
   @include fontStyle(36px, 40px);
+  font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -20,7 +21,7 @@
   margin: 0;
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
-  color: $specialDarkGrey;
+  color: $tundora;
 }
 
 .results__list {
@@ -45,7 +46,7 @@
 
 .results__description {
   @include fontStyle(14px, 14px);
-  color: $specialDarkGrey;
+  color: $tundora;
   text-transform: lowercase;
 }
 

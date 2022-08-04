@@ -1,8 +1,9 @@
 .additional-product__title {
   @include fontStyle(16px, 16px);
+  font-weight: 400;
   margin: 0;
   margin-bottom: 13px;
-  color: $specialDarkGrey2;
+  color: $mineShaft;
   text-transform: uppercase;
 }
 
@@ -10,7 +11,7 @@
   @include fontStyle(14px, 14px);
   margin: 0;
   font-family: "Arial", sans-serif;
-  color: $specialDarkGrey;
+  color: $tundora;
 }
 
 .additional-product__button {

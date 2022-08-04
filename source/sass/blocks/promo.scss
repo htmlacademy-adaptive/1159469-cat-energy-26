@@ -14,7 +14,7 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  background-image: url("../../img/index-background-cat.png");
+  background-image: url("../img/index-background-cat.png");
   background-repeat: no-repeat;
   z-index: -2;
 }
@@ -27,15 +27,16 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgba($basicGreen, 0.85);
   z-index: -1;
 }
 
 .promo__title {
   @include fontStyle(36px, 36px);
+  font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: $white;
   text-align: center;
 }
 
@@ -43,7 +44,7 @@
   @include fontStyle(14px, 14px);
   margin: 0;
   margin-bottom: 29px;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
 }
@@ -53,6 +54,9 @@
 }
 
 .promo__link {
+  @include fontStyle(14px, 18px);
+  font-family: inherit;
+  font-weight: 400;
   display: block;
   box-sizing: border-box;
   padding: 7px 0;

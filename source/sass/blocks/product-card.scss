@@ -3,11 +3,16 @@
   padding-bottom: 14px;
 }
 
-.product-card__title {
+.product-card__link {
   @include fontStyle(16px, 20px);
-  color: $specialDarkGrey2;
+  color: $mineShaft;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.product-card__title {
+  font-weight: 400;
+  margin: 0;
 }
 
 .product-card__button {

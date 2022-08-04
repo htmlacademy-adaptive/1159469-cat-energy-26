@@ -16,11 +16,12 @@
 .program-type__item {
   padding: 30px 33px 19px 20px;
   background-color: $basicGrey;
-  color: #000000;
+  color: $black;
 }
 
 .program-type__title {
   @include fontStyle(24px, 37px);
+  font-weight: 400;
   margin: 0;
   padding-left: 71px;
   margin-bottom: 29px;
@@ -32,12 +33,12 @@
   margin: 0;
   margin-bottom: 38px;
   font-family: "Arial", sans-serif;
-  color: $specialDarkGrey;
+  color: $tundora;
 }
 
 .program-type__link {
   @include fontStyle(16px, 16px);
-  color: #000000;
+  color: $black;
   text-transform: uppercase;
   text-decoration: none;
 }
