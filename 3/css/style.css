@@ -2,48 +2,21 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald Medium";
-  font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald Medium";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
   font-display: swap;
 }
 .page__body {
   width: 320px;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
 }
@@ -68,7 +41,7 @@
 
 .main-nav__link {
   color: #000000;
-  font-family: "Oswald Medium", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
@@ -90,7 +63,7 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  background-image: url("../../img/index-background-cat.png");
+  background-image: url("../img/index-background-cat.png");
   background-repeat: no-repeat;
   z-index: -2;
 }
@@ -110,6 +83,7 @@
 .promo__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
   color: #ffffff;
@@ -131,6 +105,10 @@
 }
 
 .promo__link {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  font-weight: 400;
   display: block;
   box-sizing: border-box;
   padding: 7px 0;
@@ -161,6 +139,7 @@
 .program-type__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   margin: 0;
   padding-left: 71px;
   margin-bottom: 29px;
@@ -193,6 +172,7 @@
 .work-principle__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -232,6 +212,7 @@
 .results__title {
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -347,6 +328,7 @@
 .contacts__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   width: 139px;
   color: #111111;
   text-transform: uppercase;
@@ -414,6 +396,7 @@
 .goods__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;
@@ -433,12 +416,17 @@
   padding-bottom: 14px;
 }
 
-.product-card__title {
+.product-card__link {
   font-size: 16px;
   line-height: 20px;
   color: #222222;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.product-card__title {
+  font-weight: 400;
+  margin: 0;
 }
 
 .product-card__button {
@@ -463,6 +451,7 @@
 .show-all__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   display: block;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -495,6 +484,7 @@
 .additional-goods__title {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 36px;
@@ -513,6 +503,7 @@
 .additional-product__title {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 13px;
   color: #222222;
@@ -559,7 +550,7 @@
   top: 0;
   width: 280px;
   height: 290px;
-  background-image: url("../../img/catalog-background-cat.png");
+  background-image: url("../img/catalog-background-cat.png");
   z-index: -1;
 }
 
@@ -581,6 +572,7 @@
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 37px;
@@ -727,18 +719,14 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-light {
+.button--light {
   color: #444444;
-  text-transform: uppercase;
-  text-align: center;
   background-color: #f2f2f2;
-  border: none;
-  cursor: pointer;
 }
-.button-light:hover {
+.button--light:hover {
   background-color: #ebebeb;
 }
-.button-light:active {
+.button--light:active {
   color: rgba(68, 68, 68, 0.3);
 }
 
