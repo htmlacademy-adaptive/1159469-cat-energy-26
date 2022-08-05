@@ -46,6 +46,7 @@
 
 .results__description {
   @include fontStyle(14px, 14px);
+  font-family: "Arial", sans-serif;
   color: $tundora;
   text-transform: lowercase;
 }
