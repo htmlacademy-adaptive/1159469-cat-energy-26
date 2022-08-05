@@ -1,0 +1,36 @@
+.contacts {
+  background-color: $white;
+}
+
+.contacts--background {
+  background-color: $basicGrey;
+}
+
+.contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__title {
+  @include fontStyle(16px, 20px);
+  font-weight: 400;
+  width: 139px;
+  color: $codGrey;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  @include fontStyle(14px, 20px);
+  width: 139px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: $tundora;
+}
+
+.contacts__map {
+  display: block;
+}

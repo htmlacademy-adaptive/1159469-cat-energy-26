@@ -1,0 +1,13 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__link {
+  color: $black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}

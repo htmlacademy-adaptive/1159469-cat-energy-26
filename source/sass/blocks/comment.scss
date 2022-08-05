@@ -1,0 +1,14 @@
+.comment {
+  margin-bottom: 22px;
+}
+
+.comment__textarea {
+  @include fontStyle(16px, 18px);
+  box-sizing: border-box;
+  color: $tundora;
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 100%;
+  min-height: 150px;
+  padding: 9px 13px;
+}

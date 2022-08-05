@@ -1,0 +1,23 @@
+.copyright {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.copyright__link {
+  @include fontStyle(16px, 18px);
+  font-family: "Arial", sans-serif;
+  color: $tundora;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .copyright__icon {
+    fill: $basicGreen;
+  }
+
+  &:active,
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
+}

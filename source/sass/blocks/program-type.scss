@@ -1,0 +1,44 @@
+.program-type__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.program-type__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.program-type__item {
+  padding: 30px 33px 19px 20px;
+  background-color: $basicGrey;
+  color: $black;
+}
+
+.program-type__title {
+  @include fontStyle(24px, 37px);
+  font-weight: 400;
+  margin: 0;
+  padding-left: 71px;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+.program-type__text {
+  @include fontStyle(14px, 18px);
+  margin: 0;
+  margin-bottom: 38px;
+  font-family: "Arial", sans-serif;
+  color: $tundora;
+}
+
+.program-type__link {
+  @include fontStyle(16px, 16px);
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

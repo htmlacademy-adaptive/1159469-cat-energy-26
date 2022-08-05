@@ -1,0 +1,15 @@
+.slider__scale {
+  width: 210px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__button {
+  @include fontStyle(16px, 40px);
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

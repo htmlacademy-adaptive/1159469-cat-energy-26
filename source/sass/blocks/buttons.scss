@@ -1,0 +1,29 @@
+.button {
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $basicGreen;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $appleGreen;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.button--light {
+  color: $tundora;
+  background-color: $basicGrey;
+
+  &:hover {
+    background-color: $galleryGrey;
+  }
+
+  &:active {
+    color: rgba($tundora, 0.3);
+  }
+}

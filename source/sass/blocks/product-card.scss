@@ -1,0 +1,23 @@
+.product-card {
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.product-card__link {
+  @include fontStyle(16px, 20px);
+  color: $mineShaft;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-card__title {
+  font-weight: 400;
+  margin: 0;
+}
+
+.product-card__button {
+  @include fontStyle(16px, 20px);
+  width: 280px;
+  padding: 10px 0;
+  font-family: inherit;
+}

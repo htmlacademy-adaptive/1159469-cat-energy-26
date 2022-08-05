@@ -1,0 +1,25 @@
+.gift {
+  padding-top: 59px;
+  padding-bottom: 43px;
+  background-color: rgba(104, 183, 56, 0.85);
+  position: relative;
+}
+
+.gift::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 280px;
+  height: 290px;
+  background-image: url("../img/catalog-background-cat.png");
+  z-index: -1;
+}
+
+.gift__text {
+  @include fontStyle(16px, 20px);
+  margin: 0;
+  margin-top: 128px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: $white;
+}

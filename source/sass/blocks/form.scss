@@ -1,0 +1,27 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__legend {
+  @include fontStyle(24px, 26px);
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.form__button {
+  @include fontStyle(16px, 20px);
+  width: 100%;
+  margin-bottom: 21px;
+  padding: 7px 0;
+  font-family: inherit;
+}
+
+.form__footnote {
+  @include fontStyle(14px, 16px);
+  display: block;
+  margin-bottom: 32px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
