@@ -14,20 +14,10 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  background-image: url("../img/index-background-cat.png");
+  background-image:
+    linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+    url("../img/index-background-cat.png");
   background-repeat: no-repeat;
-  z-index: -2;
-}
-
-.promo__wrapper::before {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 302px;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  background-color: rgba($basicGreen, 0.85);
   z-index: -1;
 }
 
