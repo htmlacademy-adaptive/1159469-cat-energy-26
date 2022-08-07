@@ -11,35 +11,37 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <a class="main-header__logo" href="index.html"></a>
+        <button class="main-header__toogle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
       </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="main-container">
       <section class="promo">
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
-          <img class="promo__image" src="img/index-can-chicken.png" width="280" height="270" alt="Банка консервов Cat Energy c курицей.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/index-can-chicken-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-chicken-tablet.png">
+            <img class="promo__image" src="img/index-can-chicken.png" width="280" height="270" alt="Банка консервов Cat Energy c курицей.">
+          </picture>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -81,22 +83,26 @@
       </section>
       <section class="results">
         <div class="results__wrapper">
-          <h2 class="results__title">Живой пример</h2>
-          <p class="results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="results__list">
-            <div class="results__item">
-              <dt class="results__description">Снижение веса</dt>
-              <dd class="results__amount">5 кг</dd>
-            </div>
-            <div class="results__item">
-              <dt class="results__description">Затрачено времени</dt>
-              <dd class="results__amount">60 дней</dd>
-            </div>
-          </dl>
-          <p class="results__cost">Затраты на питание: 15 000 руб.</p>
+          <div class="results__content">
+            <h2 class="results__title">Живой пример</h2>
+            <p class="results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="results__list">
+              <div class="results__item">
+                <dt class="results__description">Снижение веса</dt>
+                <dd class="results__amount">5 кг</dd>
+              </div>
+              <div class="results__item">
+                <dt class="results__description">Затрачено времени</dt>
+                <dd class="results__amount">60 дней</dd>
+              </div>
+            </dl>
+            <p class="results__cost">Затраты на питание: 15 000 руб.</p>
+          </div>
           <div class="results__slider slider">
-            <img class="slider__image" src="img/cat-before.png" width="280" height="232" alt="Котик, жирный как сметанка.">
-            <img class="slider__image" src="img/cat-after.png" width="243" height="232" alt="Котик, тощий как кощей.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-slider.png">
+              <img class="slider__image" src="img/cat-before.png" width="280" height="232" alt="Кот с избыточным весом">
+            </picture>
             <div class="slider__scale">
               <button class="slider__button" type="button">Было</button>
               <div class="slider__bar"></div>
@@ -112,7 +118,13 @@
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="./img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/location-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/location-tablet.png">
+            <img class="contacts__map-image" src="img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+          </picture>
+        </div>
       </div>
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">

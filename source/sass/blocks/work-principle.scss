@@ -1,5 +1,6 @@
 .work-principle__wrapper {
-  width: 280px;
+  width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
   margin-bottom: 49px;
 }
@@ -21,7 +22,7 @@
 }
 
 .work-principle__item {
-  padding-left: 80px;
+  margin-left: 80px;
 }
 
 .work-principle__text {
@@ -29,4 +30,56 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   color: $tundora;
+}
+
+@media (min-width: $tablet-width) {
+  .work-principle__wrapper {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  .work-principle__title {
+    @include fontStyle(60px, 60px);
+    margin-bottom: 32px;
+  }
+
+  .work-principle__list {
+    grid-template-columns: 247px 249px;
+    column-gap: 137px;
+    row-gap: 37px;
+    counter-reset: item;
+  }
+
+  .work-principle__item {
+    min-height: 280px;
+    margin-left: 0;
+    counter-increment: item;
+    position: relative;
+  }
+
+  .work-principle__item::after {
+    @include fontStyle(280px,280px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: counter(item);
+    color: $basicGrey;
+    z-index: -1;
+  }
+
+  .work-principle__text {
+    @include fontStyle(16px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-principle__wrapper {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
+
+  .work-principle__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 83px;
+  }
 }

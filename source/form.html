@@ -12,28 +12,26 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy.">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toogle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link " href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <a class="main-header__logo" href="index.html"></a>
+        <button class="main-header__toogle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
       </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="form-container">
       <section class="program-selection">
@@ -120,12 +118,14 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts contacts contacts--background">
+      <div class="footer__contacts contacts">
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
-        <img class="contacts__map" src="./img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="./img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+        </div>
       </div>
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
