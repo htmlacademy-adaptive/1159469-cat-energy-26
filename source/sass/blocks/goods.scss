@@ -1,14 +1,14 @@
 .goods__wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .goods__title {
   @include fontStyle(36px, 36px);
   font-weight: 400;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 41px;
+  margin-bottom: 41px;
 }
 
 .goods__list {
@@ -17,5 +17,40 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods__wrapper {
+    width: $tablet-width;
+    padding: 0 30px;
+  }
+
+  .goods__title {
+    @include fontStyle(60px, 60px);
+    margin-top: 65px;
+    margin-bottom: 82px;
+  }
+
+  .goods__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__wrapper {
+    width: $desktop-width;
+    padding: 0 110px;
+  }
+
+  .goods__title {
+    @include fontStyle(60px, 60px);
+    margin-top: 74px;
+    margin-bottom: 84px;
+  }
+
+  .goods__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
 }

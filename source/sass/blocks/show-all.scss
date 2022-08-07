@@ -1,7 +1,11 @@
+.show-all {
+  padding: 25px 0;
+}
+
 .show-all__title {
   @include fontStyle(16px, 20px);
   font-weight: 400;
-  display: block;
+  margin: 0;
   margin-bottom: 8px;
   text-transform: uppercase;
   text-align: center;
@@ -20,4 +24,29 @@
   width: 100%;
   padding: 10px 0;
   font-family: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .show-all {
+    padding: 8px 37px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .show-all__title {
+    @include fontStyle(20px, 22px);
+    width: 134px;
+  }
+
+  .show-all__text {
+    @include fontStyle(16px, 18px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-all {
+    padding: 0 38px 40px 39px;
+  }
 }

@@ -1,6 +1,6 @@
 .product-card {
-  padding-top: 11px;
-  padding-bottom: 14px;
+  padding-top: 19px;
+  padding-bottom: 25px;
 }
 
 .product-card__link {
@@ -11,13 +11,41 @@
 }
 
 .product-card__title {
+  @include fontStyle(16px, 20px);
   font-weight: 400;
   margin: 0;
 }
 
 .product-card__button {
   @include fontStyle(16px, 20px);
-  width: 280px;
+  width: 100%;
   padding: 10px 0;
   font-family: inherit;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    padding: 8px 37px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-card__title {
+    @include fontStyle(20px, 24px);
+    width: 174px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    padding: 0 38px 40px 39px;
+  }
+
+  .product-card__title {
+    @include fontStyle(20px, 21px);
+    width: 145px;
+  }
 }

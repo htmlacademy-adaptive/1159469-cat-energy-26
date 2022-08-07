@@ -13,11 +13,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html"></a>
-        <button class="main-header__toogle" type="button">
+        <button class="main-header__toogle toogle--active" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--active">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -118,13 +118,17 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts contacts">
+      <div class="footer__contacts contacts contacts--background">
         <div class="contacts__wrapper">
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <img class="contacts__map-image" src="./img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/location-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/location-tablet.png">
+            <img class="contacts__map-image" src="img/location.png" width="320" height="362" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+          </picture>
         </div>
       </div>
       <div class="footer__wrapper">

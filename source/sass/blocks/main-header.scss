@@ -5,8 +5,8 @@
 
 .main-header__wrapper {
   width: 320px;
-  margin: 0 auto;
   min-height: 66px;
+  margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -68,7 +68,6 @@
     width: $desktop-width;
     padding: 0 110px;
     padding-top: 53px;
-    margin-bottom: 18px;
   }
 
   .main-header__logo::after {

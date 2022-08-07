@@ -48,15 +48,18 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 480px;
   }
 
   .main-nav__link {
     @include fontStyle(20px, 30px);
-    color: $white;
     padding-top: 19px;
     padding-bottom: 21px;
+  }
+
+  .main-nav__link--light {
+    color: $white;
   }
 }
