@@ -4,11 +4,30 @@
 
 .comment__textarea {
   @include fontStyle(16px, 18px);
-  box-sizing: border-box;
   color: $tundora;
   font-family: inherit;
   text-transform: uppercase;
   width: 100%;
   min-height: 150px;
-  padding: 9px 13px;
+  padding: 10px 15px;
+  resize: none;
+  border: 1px solid $mercury;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 65px;
+  }
+
+  .comment__textarea {
+    @include fontStyle(20px, 30px);
+    min-height: 174px;
+    padding: 10px 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 67px;
+  }
 }
