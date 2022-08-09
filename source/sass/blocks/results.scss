@@ -1,5 +1,4 @@
 .results {
-  width: 320px;
   margin: 0 auto;
   background-color: $baseGalleryGrey;
   color: $black;
@@ -65,7 +64,18 @@
 
 @media (min-width: $tablet-width) {
   .results {
-    width: $tablet-width;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .results::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 462px;
+    bottom: 0;
+    background-color: $baseGalleryGrey;
+    z-index: -1;
   }
 
   .results__wrapper {
@@ -99,8 +109,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .results {
-    width: $desktop-width;
+  .results::after {
+    height: 462px;
+    background-color: $basicGrey;
   }
 
   .results__wrapper {
@@ -116,6 +127,7 @@
 
   .results__title {
     @include fontStyle(60px, 60px);
+    margin-top: 43px;
     margin-bottom: 146px;
   }
 

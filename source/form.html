@@ -25,8 +25,8 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-            <li class="main-nav__item">
+            </li>
+            <li class="main-nav__item main-nav__item--last">
               <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -40,7 +40,7 @@
           <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__fieldset-wrapper">
-              <fieldset class="form__fieldset field field--cat">
+              <fieldset class="form__fieldset field field--cat divider">
                 <legend class="visually-hidden">Введите данные вашего кота.</legend>
                 <div class="field__wrapper">
                   <label class="field__label" for="cat-name">Имя:*</label>
@@ -55,7 +55,7 @@
                   <input class="field__input" id="cat-age" type="text" name="cat-age" placeholder="7">
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset radio">
+              <fieldset class="form__fieldset radio divider">
                 <legend class="visually-hidden">Выберите программу питания для вашего кота.</legend>
                 <label class="radio__wrapper">
                   <input class="radio__control" type="radio" name="type-of-program" value="slim" checked>

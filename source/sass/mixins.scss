@@ -2,3 +2,13 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin viewBox ($width, $indent) {
+  width: $width;
+  padding: 0 $indent;
+}
+
+@mixin vericalPadding ($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}

@@ -17,3 +17,24 @@
   margin: 0;
   text-align: end;
 }
+
+@media (min-width: $tablet-width) {
+  .product-options {
+    row-gap: 6px;
+  }
+
+  .product-options__description {
+    @include fontStyle(16px, 16px);
+    padding-bottom: 9px;
+    border-bottom: 1px solid $alto;
+  }
+
+  .product-options__value {
+    @include fontStyle(16px, 16px);
+    border-bottom: 1px solid $alto;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+
+// }

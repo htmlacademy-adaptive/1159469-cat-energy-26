@@ -1,5 +1,5 @@
 .footer {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   background-color: $basicGrey;
 }
@@ -30,10 +30,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
-    width: $tablet-width;
-  }
-
   .footer__wrapper {
     width: $tablet-width;
     padding: 58px 30px 55px 30px;
@@ -56,10 +52,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
-    width: $desktop-width;
-  }
-
   .footer__wrapper {
     width: $desktop-width;
     padding: 57px 110px 58px 110px;

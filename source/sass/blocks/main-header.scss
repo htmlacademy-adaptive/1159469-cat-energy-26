@@ -1,5 +1,5 @@
 .main-header {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  border-bottom: 1px solid $mercuryGrey;
+  // border-bottom: 1px solid $mercuryGrey;
 }
 
 .main-header__logo {
@@ -32,7 +32,7 @@
   content: "";
   width: 191px;
   height: 38px;
-  top: -50%;
+  top: 50%;
   transform: translateY(-50%);
   background-image: url("../img/logo-mobile.svg");
   background-repeat: no-repeat;
@@ -45,6 +45,7 @@
     justify-content: space-between;
     padding: 0 30px;
     padding-top: 25px;
+    margin-bottom: 62px;
   }
 
   .main-header__wrapper {
@@ -69,6 +70,7 @@
     width: $desktop-width;
     padding: 0 110px;
     padding-top: 53px;
+    margin-bottom: 111px;
   }
 
   .main-header__logo::after {
