@@ -3,31 +3,7 @@
   margin: 0 auto;
 }
 
-.slider__scale {
-  width: 210px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.slider__button {
-  @include fontStyle(16px, 20px);
-  font-family: inherit;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 @media (min-width: $tablet-width) {
-  .slider__scale {
-    width: 592px;
-  }
-
-  .slider__button {
-    @include fontStyle(20px, 30px);
-  }
-
   .slider__image {
     width: 592px;
     height: auto;
