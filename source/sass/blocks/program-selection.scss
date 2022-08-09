@@ -1,8 +1,5 @@
 .program-selection__wrapper {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 32px;
-  padding: 0 20px;
 }
 
 .program-selection__title {
@@ -22,8 +19,6 @@
 
 @media (min-width: $tablet-width) {
   .program-selection__wrapper {
-    width: $tablet-width;
-    padding: 0 30px;
     margin-bottom: 72px;
   }
 
@@ -42,8 +37,6 @@
 
 @media (min-width: $desktop-width) {
   .program-selection__wrapper {
-    width: $desktop-width;
-    padding: 0 110px;
     margin-bottom: 82px;
   }
 

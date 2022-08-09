@@ -9,9 +9,8 @@
 }
 
 .contacts__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 26px 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +46,6 @@
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    width: $tablet-width;
     padding: 56px 70px;
   }
 

@@ -1,7 +1,4 @@
 .program-type__wrapper {
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -58,8 +55,6 @@
 
 @media (min-width: $tablet-width) {
   .program-type__wrapper {
-    width: $tablet-width;
-    padding: 0 30px;
     margin-bottom: 45px;
   }
 
@@ -94,8 +89,6 @@
 
 @media (min-width: $desktop-width) {
   .program-type__wrapper {
-    width: $desktop-width;
-    padding: 0 110px;
     margin-bottom: 71px;
   }
 

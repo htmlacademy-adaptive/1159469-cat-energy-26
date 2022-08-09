@@ -3,7 +3,7 @@
 }
 
 .page__body {
-  min-width: 320px;
+  min-width: $mobile-width;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;

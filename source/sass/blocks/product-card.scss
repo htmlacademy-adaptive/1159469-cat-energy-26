@@ -3,15 +3,6 @@
   padding-bottom: 25px;
 }
 
-.product-card::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 430px;
-  bottom: 0;
-  background-color: $basicGrey;
-}
-
 .product-card__wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
@@ -63,7 +54,6 @@
 @media (min-width: $tablet-width) {
   .product-card {
     padding: 8px 37px 39px 39px;
-    // background-color: transparent;
     position: relative;
   }
 

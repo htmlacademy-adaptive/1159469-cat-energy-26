@@ -28,7 +28,9 @@
 
 @media (min-width: $tablet-width) {
   .show-all {
-    padding: 8px 37px 39px 39px;
+    height: 430px;
+    margin-top: 81px;
+    padding: 52px 37px 38px 38px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,6 +50,6 @@
 
 @media (min-width: $desktop-width) {
   .show-all {
-    padding: 0 38px 40px 39px;
+    padding: 51px 38px 41px 38px;
   }
 }

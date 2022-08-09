@@ -1,13 +1,11 @@
 .results {
-  margin: 0 auto;
   background-color: $baseGalleryGrey;
   color: $black;
 }
 
 .results__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 25px 20px 40px 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -79,8 +77,8 @@
   }
 
   .results__wrapper {
-    width: $tablet-width;
-    padding: 43px 30px 56px 30px;
+    padding-top: 43px;
+    padding-bottom: 56px;
   }
 
   .results__title {
@@ -115,8 +113,8 @@
   }
 
   .results__wrapper {
-    width: $desktop-width;
-    padding: 0 110px 65px 110px;
+    padding-top: 0;
+    padding-bottom: 65px;
     flex-direction: row;
     justify-content: space-between;
   }

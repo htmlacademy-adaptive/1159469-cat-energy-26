@@ -1,15 +1,13 @@
 .promo__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  padding-top: 27px;
   margin-bottom: 20px;
-  padding: 27px 20px 0 20px;
   position: relative;
 }
 
 .promo__wrapper::after {
   position: absolute;
   content: "";
-  width: 320px;
+  width: $mobile-width;
   height: 302px;
   left: 50%;
   top: 0;
@@ -56,9 +54,8 @@
 
 @media (min-width: $tablet-width) {
   .promo__wrapper {
-    width: $tablet-width;
     min-height: 810px;
-    padding: 0 30px 0 119px;
+    padding-left: 119px;
     margin-bottom: 0;
   }
 
@@ -99,9 +96,8 @@
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
-    width: $desktop-width;
     min-height: 460px;
-    padding: 0 110px 0 190px;
+    padding-left: 190px;
     margin-bottom: 82px;
   }
 

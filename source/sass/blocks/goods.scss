@@ -1,9 +1,3 @@
-.goods__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .goods__title {
   @include fontStyle(36px, 36px);
   font-weight: 400;
@@ -21,11 +15,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .goods__wrapper {
-    width: $tablet-width;
-    padding: 0 30px;
-  }
-
   .goods__title {
     @include fontStyle(60px, 60px);
     margin-top: 65px;
@@ -39,11 +28,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .goods__wrapper {
-    width: $desktop-width;
-    padding: 0 110px;
-  }
-
   .goods__title {
     @include fontStyle(60px, 60px);
     margin-top: 74px;

@@ -11,10 +11,11 @@
   clip: rect(0 0 0 0);
 }
 
-// === Multi Container ===
+// === Container ===
 
 .container {
   @include viewBox ($mobile-width, $mobile-padding);
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,5 +61,3 @@
     display: none;
   }
 }
-
-// ======

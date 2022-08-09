@@ -1,8 +1,5 @@
 .work-principle__wrapper {
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
 }
 
 .work-principle__title {
@@ -33,9 +30,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .work-principle__wrapper {
-    width: $tablet-width;
-    padding: 0 30px;
+  .work-principle {
+    border-bottom: 1px solid $mercuryGrey;
   }
 
   .work-principle__title {
@@ -73,10 +69,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .work-principle {
+    border: none;
+  }
+
   .work-principle__wrapper {
-    width: $desktop-width;
     margin-bottom: 29px;
-    padding: 0 110px;
   }
 
   .work-principle__list {
