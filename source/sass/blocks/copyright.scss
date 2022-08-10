@@ -1,6 +1,5 @@
 .copyright {
   width: 280px;
-  margin: 0 auto;
 }
 
 .copyright__link {
@@ -19,5 +18,11 @@
   &:active,
   &:active .copyright__icon {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
   }
 }

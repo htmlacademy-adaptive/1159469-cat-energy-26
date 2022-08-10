@@ -1,15 +1,11 @@
-.slider__scale {
-  width: 210px;
+.slider__image {
+  display: block;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
-.slider__button {
-  @include fontStyle(16px, 40px);
-  font-family: inherit;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+@media (min-width: $tablet-width) {
+  .slider__image {
+    width: 592px;
+    height: auto;
+  }
 }

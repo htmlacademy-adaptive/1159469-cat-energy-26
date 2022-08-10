@@ -1,8 +1,3 @@
-.goods__wrapper {
-  width: 280px;
-  margin: 0 auto;
-}
-
 .goods__title {
   @include fontStyle(36px, 36px);
   font-weight: 400;
@@ -17,5 +12,30 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .goods__title {
+    @include fontStyle(60px, 60px);
+    margin-top: 65px;
+    margin-bottom: 82px;
+  }
+
+  .goods__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods__title {
+    @include fontStyle(60px, 60px);
+    margin-top: 74px;
+    margin-bottom: 84px;
+  }
+
+  .goods__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
 }

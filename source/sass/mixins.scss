@@ -2,3 +2,9 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin viewBox ($width, $indent) {
+  width: $width;
+  padding-right: $indent;
+  padding-left: $indent;
+}

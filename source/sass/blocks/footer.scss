@@ -1,10 +1,9 @@
 .footer {
+  width: auto;
   background-color: $basicGrey;
 }
 
 .footer__wrapper {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 22px;
   display: flex;
@@ -26,4 +25,30 @@
 
 .footer__social {
   margin-bottom: 43px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    padding-top: 58px;
+    padding-bottom: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+    padding-right: 35px;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }

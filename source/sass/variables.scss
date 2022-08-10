@@ -4,9 +4,11 @@ $white:           #ffffff;
 $basicGrey:       #f2f2f2;
 $baseGalleryGrey: #eaeaea;
 $galleryGrey:     #ebebeb;
+$mercuryGrey:     #e6e6e6;
 $mercury:         #e7e7e7;
 $silverGrey:      #cdcdcd;
 $silver:          #c4c4c4;
+$alto:            #d9d9d9;
 $black:           #000000;
 $codGrey:         #111111;
 $mineShaft:       #222222;
@@ -15,3 +17,12 @@ $doveGrey:        #666666;
 $basicGreen:      #68b738;
 $appleGreen:      #5eaa2f;
 $statusError:     #ff8282;
+
+// === Viewports ===
+
+$mobile-width: 320px;
+$mobile-padding: 20px;
+$tablet-width: 768px;
+$tablet-padding: 30px;
+$desktop-width: 1440px;
+$desktop-padding: 110px;

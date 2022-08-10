@@ -1,6 +1,7 @@
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "./templates.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
@@ -28,14 +29,3 @@
 @import "./blocks/checkbox.scss";
 @import "./blocks/comment.scss";
 @import "./blocks/buttons.scss";
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}

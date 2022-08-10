@@ -1,8 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 .page__body {
-  width: 320px;
+  min-width: $mobile-width;
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: $black;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    min-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    min-width: $desktop-width;
+  }
 }

@@ -4,6 +4,10 @@
   border: none;
 }
 
+.form__fieldset-wrapper {
+  margin-bottom: 26px;
+}
+
 .form__legend {
   @include fontStyle(24px, 26px);
   padding: 0;
@@ -21,7 +25,53 @@
 .form__footnote {
   @include fontStyle(14px, 16px);
   display: block;
-  margin-bottom: 32px;
   font-family: "Arial", sans-serif;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0 40px;
+    position: relative;
+  }
+
+  .form__legend {
+    @include fontStyle(36px, 36px);
+    margin-bottom: 76px;
+  }
+
+  .form__legend--checkbox {
+    margin-bottom: 57px;
+  }
+
+  .form__button {
+    @include fontStyle(20px, 20px);
+    width: 282px;
+    margin: 0;
+    padding: 13px 0;
+  }
+
+  .form__footnote {
+    @include fontStyle(16px, 16px);
+    position: absolute;
+    left: 384px;
+    bottom: 21px;
+  }
+
+  .form__fieldset-wrapper {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 0;
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 69px;
+  }
 }
