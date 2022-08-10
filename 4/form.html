@@ -26,8 +26,8 @@
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-            <li class="main-nav__item">
+            </li>
+            <li class="main-nav__item main-nav__item--last">
               <a class="main-nav__link main-nav__link--current" href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -36,12 +36,12 @@
     </header>
     <main class="form-container">
       <section class="program-selection">
-        <div class="program-selection__wrapper">
+        <div class="program-selection__wrapper container">
           <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__fieldset-wrapper">
-              <fieldset class="form__fieldset field field--cat">
+              <fieldset class="form__fieldset field field--cat divider">
                 <legend class="visually-hidden">Введите данные вашего кота.</legend>
                 <div class="field__wrapper">
                   <label class="field__label" for="cat-name">Имя:*</label>
@@ -56,7 +56,7 @@
                   <input class="field__input" id="cat-age" type="text" name="cat-age" placeholder="7">
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset radio">
+              <fieldset class="form__fieldset radio divider">
                 <legend class="visually-hidden">Выберите программу питания для вашего кота.</legend>
                 <label class="radio__wrapper">
                   <input class="radio__control" type="radio" name="type-of-program" value="slim" checked>
@@ -126,7 +126,7 @@
     </main>
     <footer class="footer">
       <div class="footer__contacts contacts contacts--background">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
         </div>
@@ -138,7 +138,7 @@
           </picture>
         </div>
       </div>
-      <div class="footer__wrapper">
+      <div class="footer__wrapper container">
         <a class="footer__logo" href="index.html">
           <img src="img/logo-cat-energy.svg" width="128" height="24" alt="Cat Energy.">
         </a>
