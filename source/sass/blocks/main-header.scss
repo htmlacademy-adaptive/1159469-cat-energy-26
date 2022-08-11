@@ -39,14 +39,16 @@
   .main-header {
     width: $tablet-width;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 63px;
     padding: 0 30px;
     padding-top: 25px;
-    margin-bottom: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   .main-header__wrapper {
+    min-height: 51px;
     padding: 0;
     margin: 0;
   }
@@ -66,8 +68,12 @@
   .main-header {
     width: $desktop-width;
     padding: 0 110px;
-    padding-top: 53px;
+    padding-top: 54px;
     margin-bottom: 111px;
+  }
+
+  .main-header__wrapper {
+    min-height: 59px;
   }
 
   .main-header__logo::after {

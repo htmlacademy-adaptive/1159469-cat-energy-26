@@ -15,7 +15,8 @@
 
 .container {
   @include viewBox ($mobile-width, $mobile-padding);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
