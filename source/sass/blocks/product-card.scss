@@ -54,7 +54,7 @@
 @media (min-width: $tablet-width) {
   .product-card {
     padding: 8px 37px 39px 39px;
-    position: relative;
+    background: linear-gradient(to top, $basicGrey 430px, $white 430px 100%);
   }
 
   .product-card__wrapper {
@@ -63,16 +63,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 33px;
-  }
-
-  .product-card__wrapper::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 430px;
-    bottom: 0;
-    background-color: $basicGrey;
-    z-index: -1;
   }
 
   .product-card__link--picture {
@@ -102,6 +92,7 @@
 @media (min-width: $desktop-width) {
   .product-card {
     padding: 0 38px 40px 39px;
+    background: linear-gradient(to top, $basicGrey 431px, $white 431px 100%);
   }
 
   .product-card__title {
