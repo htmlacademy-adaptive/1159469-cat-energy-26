@@ -15,6 +15,31 @@
   padding: 30px 20px 19px 20px;
   background-color: $basicGrey;
   color: $black;
+  position: relative;
+}
+
+.program-type__item--cat-slim::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  top: 46px;
+  left: 47px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.program-type__item--cat-pro::after {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 50px;
+  top: 49px;
+  left: 47px;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
 }
 
 .program-type__title {
@@ -48,9 +73,19 @@
 
 .program-type__link {
   @include fontStyle(16px, 16px);
+  padding: 15px 0;
   color: $black;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+}
+
+.program-type__link-icon {
+  margin-left: 16px;
+}
+
+.program-type__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +99,22 @@
 
   .program-type__item {
     padding: 77px 316px 53px 52px;
+  }
+
+  .program-type__item--cat-slim::after {
+    width: 200px;
+    height: 211px;
+    top: 189px;
+    left: 546px;
+    background-size: cover;
+  }
+
+  .program-type__item--cat-pro::after {
+    width: 268px;
+    height: 200px;
+    top: 192px;
+    left: 546px;
+    background-size: cover;
   }
 
   .program-type__title {
@@ -85,6 +136,11 @@
   .program-type__link {
     @include fontStyle(20px, 30px);
   }
+
+  .program-type__link-icon {
+    margin-left: 25px;
+    margin-bottom: 2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -98,7 +154,23 @@
   }
 
   .program-type__item {
-    padding: 41px 51px 55px 52px;
+    padding: 77px 51px 59px 52px;
+  }
+
+  .program-type__item--cat-slim::after {
+    width: 100px;
+    height: 106px;
+    top: 94px;
+    left: 102px;
+    background-size: cover;
+  }
+
+  .program-type__item--cat-pro::after {
+    width: 134px;
+    height: 100px;
+    top: 97px;
+    left: 102px;
+    background-size: cover;
   }
 
   .program-type__title {
@@ -108,5 +180,9 @@
 
   .program-type__text {
     margin-bottom: 23px;
+  }
+
+  .program-type__link-icon {
+    margin-left: 27px;
   }
 }

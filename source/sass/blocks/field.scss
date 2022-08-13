@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .field__wrapper--last {
@@ -19,11 +20,62 @@
   @include fontStyle(16px, 18px);
   font-family: inherit;
   margin-left: 12px;
-  padding: 14px 0 14px 15px;
+  padding: 13px 0 13px 15px;
   text-transform: uppercase;
   color: $tundora;
   border: 1px solid $mercury;
   flex-grow: 1;
+  position: relative;
+
+  &:hover {
+    border-color: $silverGrey;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 0 1px $tundora;
+    outline: none;
+    border-color: $tundora;
+
+    + .field__icon--mail path {
+      stroke: $basicGreen;
+    }
+
+    + .field__icon--phone path {
+      fill: $basicGreen;
+    }
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    box-shadow: inset 0 0 0 1px $statusError;
+    border-color: $statusError;
+
+    + .field__icon--mail path {
+      stroke: $statusError;
+    }
+
+    + .field__icon--phone path {
+      fill: $statusError;
+    }
+  }
+
+  &::placeholder {
+    color: $tundora;
+  }
+}
+
+
+.field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.field__icon--mail {
+  right: 15px;
+}
+
+.field__icon--phone {
+  right: 13px;
 }
 
 .field--cat {
@@ -50,7 +102,15 @@
   .field__input {
     @include fontStyle(20px, 30px);
     margin-left: 12px;
-    padding: 11px 0 11px 19px;
+    padding: 9px 0 9px 19px;
+  }
+
+  .field__icon--mail {
+    right: 19px;
+  }
+
+  .field__icon--phone {
+    right: 17px;
   }
 
   .field--cat {

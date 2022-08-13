@@ -19,12 +19,41 @@
 }
 
 .work-principle__item {
-  margin-left: 80px;
+  position: relative;
+}
+
+.work-principle__item--icon::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: $basicGreen;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.work-principle__item--icon_leaf::before {
+  background-image: url("../img/icon-leaf.svg");
+}
+
+.work-principle__item--icon_tub::before {
+  background-image: url("../img/icon-tub.svg");
+}
+
+.work-principle__item--icon_eat::before {
+  background-image: url("../img/icon-eat.svg");
+}
+
+.work-principle__item--icon_alarm::before {
+  background-image: url("../img/icon-alarm.svg");
 }
 
 .work-principle__text {
   @include fontStyle(14px, 18px);
   margin: 0;
+  padding: 3px 0 3px 80px;
   font-family: "Arial", sans-serif;
   color: $tundora;
 }
@@ -40,7 +69,8 @@
   }
 
   .work-principle__list {
-    grid-template-columns: 247px 249px;
+    padding-right: 75px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 137px;
     row-gap: 37px;
     counter-reset: item;
@@ -48,13 +78,18 @@
 
   .work-principle__item {
     min-height: 280px;
-    margin-left: 0;
+    padding-top: 151px;
     counter-increment: item;
-    position: relative;
+  }
+
+  .work-principle__item--icon::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
   }
 
   .work-principle__item::after {
-    @include fontStyle(280px,280px);
+    @include fontStyle(280px, 280px);
     position: absolute;
     top: 0;
     right: 0;
@@ -65,6 +100,7 @@
 
   .work-principle__text {
     @include fontStyle(16px, 24px);
+    padding: 0;
   }
 }
 
@@ -79,6 +115,7 @@
 
   .work-principle__list {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 83px;
+    padding-right: 0;
+    column-gap: 80px;
   }
 }

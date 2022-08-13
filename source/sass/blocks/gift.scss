@@ -1,18 +1,11 @@
 .gift {
   padding-top: 59px;
   padding-bottom: 43px;
-  background-color: rgba($basicGreen, 0.85);
-  position: relative;
-}
-
-.gift::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  width: 280px;
-  height: 290px;
-  background-image: url("../img/catalog-background-cat.png");
-  z-index: -1;
+  background-image:
+    linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+    url("../img/catalog-background-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .gift__text {
@@ -22,18 +15,29 @@
   font-family: "Arial", sans-serif;
   text-align: center;
   color: $white;
+  position: relative;
+}
+
+.gift__text::after {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 80px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/icon_gift.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .gift {
     padding-top: 71px;
     padding-bottom: 69px;
-  }
-
-  .gift::after {
-    width: 708px;
-    height: 200px;
-    background-image: url("../img/catalog-background-cat-tablet.png");
+    background-image:
+      linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+      url("../img/catalog-background-cat-tablet.png");
   }
 
   .gift__text {
@@ -41,24 +45,33 @@
     padding-left: 422px;
     text-align: left;
   }
+
+  .gift__text::after {
+    width: 80px;
+    height: 82px;
+    top: -14px;
+    left: 108px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .gift {
     padding: 55px 43px 42px 41px;
-  }
-
-  .gift::after {
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/catalog-background-cat-desktop.png");
-    background-repeat: no-repeat;
+    background-image:
+      linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+      url("../img/catalog-background-cat-desktop.png");
   }
 
   .gift__text {
     padding: 0;
-    padding-top: 126px;
+    padding-top: 128px;
     text-align: center;
+  }
+
+  .gift__text::after {
+    width: 80px;
+    height: 82px;
+    top: 0;
+    left: 50%;
   }
 }

@@ -8,11 +8,30 @@
   margin-bottom: 12px;
 }
 
+.checkbox__label:hover {
+  cursor: pointer;
+
+  .checkbox__mark {
+    border-color: $silverSteel;
+  }
+}
+
+.checkbox__contol:disabled {
+  + .checkbox__mark {
+    border-color: $silverSteel;
+    opacity: 0.3;
+  }
+
+  ~ .checkbox__text {
+    opacity: 0.3;
+  }
+}
+
 .checkbox__label--last {
   margin-bottom: 0;
 }
 
-.checkbox__input {
+.checkbox__contol {
   display: none;
 }
 
@@ -21,6 +40,12 @@
   width: 30px;
   height: 30px;
   border: 1px solid $silverGrey;
+}
+
+.checkbox__contol:checked + .checkbox__mark {
+  background-image: url("../img/checkbox-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .checkbox__text {
@@ -52,6 +77,12 @@
 
   .checkbox__label {
     margin: 0;
+  }
+
+  .checkbox__contol:checked + .checkbox__mark {
+    background-image: url("../img/checkbox-mark-tablet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 

@@ -55,7 +55,8 @@
 .results__description {
   @include fontStyle(12px, 12px);
   position: absolute;
-  top: 47px;
+  padding: 0 17px;
+  top: 46px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Arial", sans-serif;
@@ -84,18 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .results {
-    background-color: transparent;
-    position: relative;
-  }
-
-  .results::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 462px;
-    bottom: 0;
-    background-color: $baseGalleryGrey;
-    z-index: -1;
+    background-image: linear-gradient(to top, $baseGalleryGrey 462px, $white 462px, $white 100%);
   }
 
   .results__wrapper {
@@ -134,9 +124,14 @@
 
   .results__description {
     @include fontStyle(14px, 14px);
-    max-width: 125px;
-    top: 63px;
+    top: 64px;
     background-color: $white;
+    padding: 0 9px;
+    width: 115px;
+  }
+
+  .results__description--wide {
+    width: 145px;
   }
 
   .results__cost {
@@ -154,9 +149,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .results::after {
-    height: 462px;
-    background-color: $basicGrey;
+  .results {
+    background-image: linear-gradient(to top, $basicGrey 462px, $white 462px, $white 100%);
   }
 
   .results__wrapper {
@@ -185,8 +179,6 @@
   }
 
   .results__description {
-    max-width: 125px;
-    top: 63px;
     background-color: $basicGrey;
   }
 

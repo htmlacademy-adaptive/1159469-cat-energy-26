@@ -56,9 +56,17 @@
   transform: rotate(180deg);
 }
 
+.divider--header {
+  border-bottom: 1px solid $alto;
+}
+
 @media (min-width: $tablet-width) {
   .divider::after,
   .divider::before {
     display: none;
+  }
+
+  .divider--header {
+    border-bottom: none;
   }
 }
