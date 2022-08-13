@@ -37,7 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    width: $tablet-width;
+    width: auto;
+    max-width: 1080px;
     margin: 0 auto;
     margin-bottom: 63px;
     padding: 0 30px;
@@ -66,7 +67,8 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    width: $desktop-width;
+    width: auto;
+    max-width: 1800px;
     padding: 0 110px;
     padding-top: 54px;
     margin-bottom: 111px;
