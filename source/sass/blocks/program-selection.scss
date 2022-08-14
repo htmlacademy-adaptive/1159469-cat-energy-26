@@ -1,12 +1,12 @@
 .program-selection__wrapper {
-  margin-bottom: 32px;
+  padding-top: 27px;
+  padding-bottom: 32px;
 }
 
 .program-selection__title {
   @include fontStyle(36px, 36px);
   font-weight: 400;
   margin: 0;
-  margin-top: 27px;
   margin-bottom: 37px;
 }
 
@@ -19,32 +19,37 @@
 
 @media (min-width: $tablet-width) {
   .program-selection__wrapper {
-    margin-bottom: 72px;
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+
+  .program-selection__content {
+    padding-left: 40px;
   }
 
   .program-selection__title {
     @include fontStyle(60px, 60px);
-    margin: 65px 0 54px 39px;
+    margin-bottom: 54px;
   }
 
   .program-selection__text {
     @include fontStyle(20px, 30px);
-    margin-bottom: 66px;
-    margin-left: 40px;
     width: 323px;
+    margin-bottom: 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-selection__wrapper {
-    margin-bottom: 82px;
+    padding-top: 73px;
+    padding-bottom: 82px;
+  }
+
+  .program-selection__content {
+    padding-left: 0;
   }
 
   .program-selection__title {
-    margin: 77px 0 56px 0;
-  }
-
-  .program-selection__text {
-    margin-left: 0;
+    margin-bottom: 56px;
   }
 }
