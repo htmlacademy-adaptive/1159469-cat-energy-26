@@ -1,5 +1,6 @@
 .work-principle__wrapper {
-  margin-bottom: 47px;
+  padding-top: 20px;
+  padding-bottom: 49px;
 }
 
 .work-principle__title {
@@ -63,6 +64,11 @@
     border-bottom: 1px solid $mercuryGrey;
   }
 
+  .work-principle__wrapper {
+    padding-top: 45px;
+    padding-bottom: 46px;
+  }
+
   .work-principle__title {
     @include fontStyle(60px, 60px);
     margin-bottom: 32px;
@@ -110,7 +116,8 @@
   }
 
   .work-principle__wrapper {
-    margin-bottom: 69px;
+    padding-top: 71px;
+    padding-bottom: 69px;
   }
 
   .work-principle__list {

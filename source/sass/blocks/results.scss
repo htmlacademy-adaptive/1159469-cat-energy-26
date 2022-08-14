@@ -6,8 +6,10 @@
 .results__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
+}
+
+.results__content {
+  margin-bottom: 20px;
 }
 
 .results__title {
@@ -23,10 +25,6 @@
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   color: $tundora;
-}
-
-.results__score {
-  margin-bottom: 40px;
 }
 
 .results__list {
@@ -90,7 +88,11 @@
 
   .results__wrapper {
     padding-top: 43px;
-    padding-bottom: 101px;
+    padding-bottom: 100px;
+  }
+
+  .results__content {
+    margin-bottom: 104px;
   }
 
   .results__title {
@@ -104,7 +106,6 @@
   }
 
   .results__score {
-    margin-bottom: 104px;
     display: flex;
     justify-content: space-between;
   }
@@ -156,12 +157,13 @@
   .results__wrapper {
     padding-top: 0;
     padding-bottom: 75px;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
 
   .results__content {
     width: 436px;
+    margin: 0;
   }
 
   .results__list {

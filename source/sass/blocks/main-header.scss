@@ -6,7 +6,7 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 20px;
-  min-height: 66px;
+  min-height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,23 +40,22 @@
     width: auto;
     max-width: 1080px;
     margin: 0 auto;
-    margin-bottom: 63px;
+    margin-top: 25px;
     padding: 0 30px;
-    padding-top: 25px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
   .main-header__wrapper {
-    min-height: 51px;
+    min-height: 52px;
     padding: 0;
     margin: 0;
   }
 
   .main-header__logo::after {
     width: 174px;
-    height: 51px;
+    height: 52px;
     background-image: url("../img/logo-tablet.svg");
   }
 
@@ -69,9 +68,8 @@
   .main-header {
     width: auto;
     max-width: 1800px;
+    margin-top: 54px;
     padding: 0 110px;
-    padding-top: 54px;
-    margin-bottom: 111px;
   }
 
   .main-header__wrapper {

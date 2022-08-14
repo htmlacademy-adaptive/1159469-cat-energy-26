@@ -34,7 +34,7 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
 }
 
@@ -89,7 +89,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
+  .main-nav__wrapper {
     width: 440px;
   }
 
@@ -105,7 +105,7 @@
   .main-nav__link {
     @include fontStyle(18px, 24px);
     font-weight: 400;
-    padding-top: 16px;
+    padding-top: 17px;
     padding-bottom: 9px;
   }
 
