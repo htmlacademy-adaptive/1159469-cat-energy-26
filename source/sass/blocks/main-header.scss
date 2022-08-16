@@ -67,7 +67,7 @@
 @media (min-width: $desktop-width) {
   .main-header {
     width: auto;
-    max-width: 1800px;
+    max-width: $desktop-width;
     margin-top: 54px;
     padding: 0 110px;
   }

@@ -1,3 +1,56 @@
+.slider__wrapper {
+  position: relative;
+}
+
+.slider__control {
+  position: absolute;
+  padding: 0;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $doveGrey;
+  border: none;
+  border-radius: 2px;
+}
+
+.slider__control:hover {
+  background-color: $basicGreen;
+
+  .slider__control-icon {
+    rect {
+      stroke: $basicGreen;
+    }
+
+    path {
+      fill: $basicGreen;
+    }
+  }
+}
+
+.slider__control:active {
+  background-color: $appleGreen;
+  opacity: 0.6;
+
+  .slider__control-icon {
+    rect {
+      stroke: $appleGreen;
+    }
+
+    path {
+      fill: $appleGreen;
+    }
+  }
+}
+
+.slider__control-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .slider__image {
   display: block;
   margin: 0 auto;

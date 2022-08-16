@@ -16,7 +16,7 @@
   }
 }
 
-.checkbox__contol:disabled {
+.checkbox__control:disabled {
   + .checkbox__mark {
     border-color: $silverSteel;
     opacity: 0.3;
@@ -31,8 +31,19 @@
   margin-bottom: 0;
 }
 
-.checkbox__contol {
-  display: none;
+.checkbox__control {
+  position: absolute;
+  appearance: none;
+}
+
+.checkbox__control:focus {
+  + .checkbox__mark {
+    outline: 3px solid $black;
+  }
+
+  ~ .checkbox__text {
+    opacity: 0.6;
+  }
 }
 
 .checkbox__mark {
@@ -42,7 +53,7 @@
   border: 1px solid $silverGrey;
 }
 
-.checkbox__contol:checked + .checkbox__mark {
+.checkbox__control:checked + .checkbox__mark {
   background-image: url("../img/checkbox-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +90,7 @@
     margin: 0;
   }
 
-  .checkbox__contol:checked + .checkbox__mark {
+  .checkbox__control:checked + .checkbox__mark {
     background-image: url("../img/checkbox-mark-tablet.svg");
     background-position: center;
     background-repeat: no-repeat;

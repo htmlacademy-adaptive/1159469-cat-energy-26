@@ -43,9 +43,19 @@
 }
 
 .radio__control {
+  position: absolute;
   appearance: none;
 }
 
+.radio__control:focus {
+  + .radio__mark {
+    outline: 3px solid $black;
+  }
+
+  ~ .radio__label {
+    opacity: 0.6;
+  }
+}
 
 .radio__mark {
   display: block;
@@ -55,6 +65,7 @@
   border-radius: 50%;
   position: relative;
 }
+
 
 .radio__control:checked + .radio__mark::after {
   position: absolute;
