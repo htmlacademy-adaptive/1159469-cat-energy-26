@@ -1,3 +1,7 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__wrapper {
   width: auto;
   margin: 0 auto;
@@ -9,6 +13,7 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -24,12 +29,63 @@
   @include fontStyle(20px, 20px);
   display: block;
   color: $black;
+  background-color: $white;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
+}
+
+.main-nav__link:hover {
+  color: rgba($black, 60%);
+}
+
+.main-nav__link:active {
+  color: rgba($black, 30%);
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__wrapper {
+    transition: top 400ms;
+    position: relative;
+  }
+
+  .main-header__wrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  .main-nav::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 66px;
+    top: -66px;
+    left: 0;
+    background-color: $white;
+    z-index: 2;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    position: absolute;
+    top: -100vh;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+    z-index: 1;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,6 +105,12 @@
   .main-nav__link {
     @include fontStyle(18px, 24px);
     font-weight: 400;
+    padding-top: 17px;
+    padding-bottom: 9px;
+  }
+
+  .main-nav__link--current {
+    border-bottom: 2px solid $basicGreen;
   }
 }
 
@@ -59,11 +121,24 @@
 
   .main-nav__link {
     @include fontStyle(20px, 30px);
-    padding-top: 19px;
-    padding-bottom: 21px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    background-color: transparent;
   }
 
-  .main-nav__link--light {
+  .main-nav__list--light .main-nav__link {
     color: $white;
+  }
+
+  .main-nav__list--light .main-nav__link:hover {
+    color: rgba($white, 60%);
+  }
+
+  .main-nav__list--light .main-nav__link:active {
+    color: rgba($white, 30%);
+  }
+
+  .main-nav__list--light .main-nav__link--current {
+    border-bottom: 2px solid $white;
   }
 }

@@ -1,5 +1,6 @@
 .copyright {
-  width: 280px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .copyright__link {
@@ -24,5 +25,6 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
+    margin: 0;
   }
 }

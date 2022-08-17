@@ -1,7 +1,7 @@
-@import "./fonts.scss";
-@import "./variables.scss";
-@import "./mixins.scss";
-@import "./templates.scss";
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/templates.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
@@ -29,3 +29,4 @@
 @import "./blocks/checkbox.scss";
 @import "./blocks/comment.scss";
 @import "./blocks/buttons.scss";
+@import "./blocks/toogle.scss";

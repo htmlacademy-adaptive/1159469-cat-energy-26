@@ -6,8 +6,10 @@
 .results__wrapper {
   padding-top: 25px;
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
+}
+
+.results__content {
+  margin-bottom: 20px;
 }
 
 .results__title {
@@ -23,10 +25,6 @@
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   color: $tundora;
-}
-
-.results__score {
-  margin-bottom: 40px;
 }
 
 .results__list {
@@ -55,7 +53,8 @@
 .results__description {
   @include fontStyle(12px, 12px);
   position: absolute;
-  top: 47px;
+  padding: 0 17px;
+  top: 46px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Arial", sans-serif;
@@ -84,23 +83,16 @@
 
 @media (min-width: $tablet-width) {
   .results {
-    background-color: transparent;
-    position: relative;
-  }
-
-  .results::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 462px;
-    bottom: 0;
-    background-color: $baseGalleryGrey;
-    z-index: -1;
+    background-image: linear-gradient(to top, $baseGalleryGrey 462px, $white 462px, $white 100%);
   }
 
   .results__wrapper {
     padding-top: 43px;
-    padding-bottom: 101px;
+    padding-bottom: 100px;
+  }
+
+  .results__content {
+    margin-bottom: 104px;
   }
 
   .results__title {
@@ -114,7 +106,6 @@
   }
 
   .results__score {
-    margin-bottom: 104px;
     display: flex;
     justify-content: space-between;
   }
@@ -134,9 +125,14 @@
 
   .results__description {
     @include fontStyle(14px, 14px);
-    max-width: 125px;
-    top: 63px;
+    top: 64px;
     background-color: $white;
+    padding: 0 9px;
+    width: 115px;
+  }
+
+  .results__description--wide {
+    width: 145px;
   }
 
   .results__cost {
@@ -154,20 +150,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .results::after {
-    height: 462px;
-    background-color: $basicGrey;
+  .results {
+    background-image: linear-gradient(to top, $basicGrey 462px, $white 462px, $white 100%);
   }
 
   .results__wrapper {
     padding-top: 0;
     padding-bottom: 75px;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
 
   .results__content {
     width: 436px;
+    margin: 0;
   }
 
   .results__list {
@@ -185,8 +181,6 @@
   }
 
   .results__description {
-    max-width: 125px;
-    top: 63px;
     background-color: $basicGrey;
   }
 

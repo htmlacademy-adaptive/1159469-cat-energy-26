@@ -1,0 +1,55 @@
+.toogle {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toogle__burger {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 24px;
+  height: 1.5px;
+  background-color: $black;
+  transition: height 100ms, transform 400ms;
+}
+
+.toogle__burger::after,
+.toogle__burger::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background-color: $black;
+  transition: all 0.2s;
+}
+
+.toogle__burger::after {
+  top: -8px;
+}
+
+.toogle__burger::before {
+  top: 8px;
+}
+
+.toogle--active .toogle__burger {
+  height: 0;
+  transform: rotate(90deg);
+}
+
+.toogle--active .toogle__burger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.toogle--active .toogle__burger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.toogle--nojs {
+  display: none;
+}
