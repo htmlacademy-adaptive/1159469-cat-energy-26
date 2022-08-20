@@ -14,10 +14,19 @@
   transform: translateX(-50%);
   background-image:
     linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
-    url("../img/index-background-cat.png");
+    url("../img/index-background-cat.jpg");
   background-repeat: no-repeat;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+    linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+    url("../img/index-background-cat@2x.jpg");
+    background-size: 320px auto;
+  }
 }
+
+
 
 .promo__title {
   @include fontStyle(36px, 36px);
@@ -121,11 +130,17 @@
     right: 0;
     background-image:
       linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
-      url("../img/index-background-desktop.png");
+      url("../img/index-background-cat-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+      linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+      url("../img/index-background-cat-desktop@2x.jpg");
+    }
   }
 
   .promo__title {
