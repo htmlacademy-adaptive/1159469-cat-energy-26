@@ -3,9 +3,15 @@
   padding-bottom: 43px;
   background-image:
     linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
-    url("../img/catalog-background-cat.png");
+    url("../img/catalog-background-cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+      url("../img/catalog-background-cat@2x.jpg");
+  }
 }
 
 .gift__text {
@@ -37,7 +43,13 @@
     padding-bottom: 69px;
     background-image:
       linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
-      url("../img/catalog-background-cat-tablet.png");
+      url("../img/catalog-background-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+        url("../img/catalog-background-cat-tablet@2x.jpg");
+    }
   }
 
   .gift__text {
@@ -59,7 +71,13 @@
     padding: 55px 43px 42px 41px;
     background-image:
       linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
-      url("../img/catalog-background-cat-desktop.png");
+      url("../img/catalog-background-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(rgba($basicGreen, 0.85), rgba($basicGreen, 0.85)),
+        url("../img/catalog-background-cat-desktop@2x.jpg");
+    }
   }
 
   .gift__text {

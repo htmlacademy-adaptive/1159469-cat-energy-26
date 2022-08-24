@@ -80,8 +80,20 @@
   margin-left: 16px;
 }
 
+.program-type__link-icon g {
+  transition: all 300ms;
+}
+
 .program-type__link:active {
   opacity: 0.3;
+}
+
+.program-type__link:hover .icon-line {
+  transform: scale(1.44, 1);
+}
+
+.program-type__link:hover .icon-triangle {
+  transform: translate(8px);
 }
 
 @media (min-width: $tablet-width) {

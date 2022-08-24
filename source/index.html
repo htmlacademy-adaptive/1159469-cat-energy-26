@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon32.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -40,9 +42,9 @@
             <h1 class="promo__title">Функциональное питание для котов</h1>
             <p class="promo__text">Занялся собой? Займись котом!</p>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/index-can-chicken-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/index-can-chicken-tablet.png">
-              <img class="promo__image" src="img/index-can-chicken.png" width="280" height="270" alt="Банка консервов Cat Energy c курицей.">
+              <source media="(min-width: 1440px)" srcset="img/index-can-chicken-desktop.png 1x, img/index-can-chicken-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-chicken-tablet.png 1x, img/index-can-chicken-tablet@2x.png 2x">
+              <img class="promo__image" src="img/index-can-chicken.png" srcset="img/index-can-chicken.png 1x, img/index-can-chicken@2x.png 2x" width="280" height="270" alt="Банка консервов Cat Energy c курицей.">
             </picture>
             <a class="promo__link button" href="form.html">Подобрать программу</a>
           </div>
@@ -56,9 +58,13 @@
               <h3 class="program-type__title">Похудение</h3>
               <p class="program-type__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="program-type__link" href="catalog.html">Каталог Slim
-                <svg class="program-type__link-icon" width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                <svg class="program-type__link-icon" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="icon-line">
+                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                  </g>
+                  <g class="icon-triangle">
+                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                  </g>
                 </svg>
               </a>
             </li>
@@ -66,9 +72,13 @@
               <h3 class="program-type__title">Набор массы</h3>
               <p class="program-type__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="program-type__link" href="catalog.html">Каталог Pro
-                <svg class="program-type__link-icon" width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                <svg class="program-type__link-icon" width="32" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="icon-line">
+                    <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                  </g>
+                  <g class="icon-triangle">
+                    <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+                  </g>
                 </svg>
               </a>
             </li>
@@ -118,6 +128,12 @@
           </div>
           <div class="results__slider slider">
             <div class="slider__wrapper">
+              <div class="slider__gallery slider__gallery--before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--before" src="img/cat-before.png" srcset="img/cat-before.png 1x, img/cat-before@2x.png 2x" width="280" height="256" alt="Кот с избыточным весом">
+                </picture>
+              </div>
               <button class="slider__control">
                 <svg class="slider__control-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/>
@@ -125,10 +141,10 @@
                   <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/>
                 </svg>
               </button>
-              <div class="slider__gallery">
+              <div class="slider__gallery slider__gallery--after">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/cat-slider-tablet.png">
-                  <img class="slider__image" src="img/cat-slider-mobile.png" width="280" height="256" alt="Кот с избыточным весом">
+                  <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+                  <img class="slider__image slider__image--after" src="img/cat-after.png" srcset="img/cat-after.png 1x, img/cat-after@2x.png 2x" width="280" height="256" alt="Стройный кот">
                 </picture>
               </div>
             </div>
@@ -146,7 +162,7 @@
           </div>
         </div>
         <div class="contacts__frame">
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4536578829207!2d30.32087929088808!3d59.93870385602057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660421522871!5m2!1sru!2sru" width=320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.4536578829207!2d30.32087929088808!3d59.93870385602057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1660421522871!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="footer__wrapper container">
@@ -190,6 +206,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
