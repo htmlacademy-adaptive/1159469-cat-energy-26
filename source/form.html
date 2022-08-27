@@ -10,7 +10,7 @@
     <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-    <header class="main-header divider--header">
+    <header class="main-header divider-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу">
           <picture>
@@ -84,7 +84,7 @@
               </fieldset>
             </div>
             <fieldset class="form__fieldset field field--owner">
-              <legend class="form__legend">Контактные данные (владельца кота)</legend>
+              <legend class="form__legend title-line">Контактные данные<br>(владельца кота)</legend>
               <div class="field__box">
                 <div class="field__wrapper">
                   <label class="field__label" for="email">E-mail:*</label>
@@ -110,12 +110,12 @@
               </div>
             </fieldset>
             <fieldset class="form__fieldset comment">
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend title-line">Комментарий</legend>
               <label class="comment__label" for="comment"></label>
               <textarea class="comment__textarea" id="comment" name="comment" placeholder="Раскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="form__fieldset checkbox">
-              <legend class="form__legend form__legend--checkbox">Дополнительно</legend>
+              <legend class="form__legend form__legend--checkbox title-line">Дополнительно</legend>
               <div class="checkbox__wrapper">
                 <label class="checkbox__label">
                   <input class="checkbox__control" type="checkbox" name="sweetener" checked>
@@ -146,7 +146,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contacts contacts">
+      <div class="footer__contacts contacts contacts--background">
         <div class="contacts__wrapper container">
           <b class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</b>
           <div class="contacts__address">
