@@ -63,7 +63,7 @@ const svg = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-export const createSprite = () => {
+const createSprite = () => {
   return gulp.src('source/img/sprite-icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
