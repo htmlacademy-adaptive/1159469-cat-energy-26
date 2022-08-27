@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подбор программы питания</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header divider--header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html"></a>
+        <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
         <button class="main-header__toogle toogle toogle--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
           <span class="toogle__burger"></span>
@@ -183,9 +191,9 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy.">HTML Academy
             <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#icon-copyright"></use>
+              <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>

@@ -8,12 +8,20 @@
     <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html"></a>
+        <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+          </picture>
+        </a>
         <button class="main-header__toogle toogle toogle--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
           <span class="toogle__burger"></span>
@@ -139,8 +147,8 @@
                   <img class="slider__image slider__image--before" src="img/cat-before.png" srcset="img/cat-before.png 1x, img/cat-before@2x.png 2x" width="280" height="256" alt="Кот с избыточным весом">
                 </picture>
               </div>
-              <button class="slider__control">
-                <svg class="slider__control-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="slider__control" aria-label="Потяните, чтобы увидеть разницу">
+                <svg class="slider__control-icon" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/>
                   <path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666"/>
                   <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/>
@@ -205,9 +213,9 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy.">HTML Academy
             <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#icon-copyright"></use>
+              <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>

@@ -16,6 +16,14 @@
   color: $mineShaft;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-card__link--picture {

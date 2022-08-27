@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 
+.page {
+  height: 100%;
+}
+
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-width: $mobile-width;
   margin: 0 auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   color: $black;
   background-color: $white;
