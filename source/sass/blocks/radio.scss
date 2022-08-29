@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 
 .radio__wrapper {
@@ -37,6 +37,7 @@
 
 .radio__label {
   @include fontStyle(16px, 18px);
+  max-width: 235px;
   color: $mineShaft;
   text-transform: uppercase;
   margin-left: 15px;
@@ -89,6 +90,7 @@
   .radio__label {
     @include fontStyle(20px, 30px);
     margin-left: 20px;
+    max-width: 500px;
   }
 
   .radio__mark {
@@ -106,5 +108,9 @@
   .radio {
     width: 570px;
     padding: 27px 28px;
+  }
+
+  .radio__label {
+    max-width: 450px;
   }
 }

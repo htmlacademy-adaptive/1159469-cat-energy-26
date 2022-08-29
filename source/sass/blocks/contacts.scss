@@ -81,9 +81,9 @@
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     position: absolute;
-    top: 95px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-610px);
+    transform: translate(-610px, -50%);
     width: 565px;
     padding: 56px 80px;
     z-index: 1;

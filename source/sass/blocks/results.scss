@@ -43,21 +43,21 @@
   @include fontStyle(24px, 24px);
   width: 124px;
   margin: 0;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding: 14px 15px 16px 15px;
   text-transform: uppercase;
   border: 1px solid $silverGrey;
   border-radius: 3px;
   text-align: center;
+  word-break: break-all;
 }
 
 .results__description {
   @include fontStyle(12px, 12px);
   position: absolute;
   padding: 0 17px;
-  top: 46px;
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -10px);
   font-family: "Arial", sans-serif;
   color: $tundora;
   background-color: $baseGalleryGrey;
@@ -128,15 +128,14 @@
     width: 162px;
     padding-top: 15px;
     padding-bottom: 20px;
-    // height: 72px;
   }
 
   .results__description {
     @include fontStyle(14px, 14px);
-    top: 64px;
     background-color: $white;
     padding: 0 9px;
     width: 115px;
+    transform: translate(-50%, -8px);
   }
 
   .results__description--wide {

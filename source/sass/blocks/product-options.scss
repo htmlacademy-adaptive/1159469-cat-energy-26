@@ -1,9 +1,9 @@
 .product-options {
   margin: 0;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 12px 12px 12px;
-  row-gap: 5px;
+  row-gap: 4px;
 }
 
 .product-options__description {
@@ -21,8 +21,8 @@
 
 @media (min-width: $tablet-width) {
   .product-options {
-    grid-template-rows: 24px 24px 24px;
-    row-gap: 7px;
+    row-gap: 5px;
+    padding-bottom: 0;
   }
 
   .product-options__description {
@@ -34,17 +34,5 @@
   .product-options__value {
     @include fontStyle(16px, 16px);
     border-bottom: 1px solid $alto;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .product-options__description {
-    padding-top: 5px;
-    padding-bottom: 25px;
-  }
-
-  .product-options__value {
-    padding-top: 5px;
-    padding-bottom: 25px;
   }
 }

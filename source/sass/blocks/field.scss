@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
   position: relative;
 }
 
@@ -14,6 +14,7 @@
   @include fontStyle(16px, 18px);
   text-transform: uppercase;
   color: $tundora;
+  max-width: 100px;
 }
 
 .field__input {
@@ -64,11 +65,11 @@
 }
 
 .field__input--email {
-  margin-left: 13px;
+  margin-left: 11px;
 }
 
 .field__input--phone {
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .field__icon {
@@ -86,16 +87,16 @@
 }
 
 .field--cat {
-  padding-bottom: 23px;
+  padding-bottom: 24px;
 }
 
 .field--owner {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .field__wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .field__wrapper--last {
@@ -104,6 +105,7 @@
 
   .field__label {
     @include fontStyle(20px, 30px);
+    max-width: 150px;
   }
 
   .field__input {
@@ -135,13 +137,13 @@
   }
 
   .field--owner {
-    margin-bottom: 68px;
+    margin-bottom: 67px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .field__wrapper {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
   }
 
   .field__wrapper--last {
@@ -150,6 +152,14 @@
 
   .field__input {
     padding: 11px 0 11px 17px;
+  }
+
+  .field__input--email {
+    margin-left: 23px;
+  }
+
+  .field__input--phone {
+    margin-left: 16px;
   }
 
   .field__box {
