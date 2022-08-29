@@ -39,6 +39,14 @@
   transform: translate(-50%, -50%);
 }
 
+.product-card__image--gramm_500 {
+  top: 60%;
+}
+
+.product-card__image--gramm_1000 {
+  top: 55%;
+}
+
 .product-card__title {
   @include fontStyle(16px, 20px);
   font-weight: 400;
@@ -76,12 +84,21 @@
   .product-card__link--picture {
     width: 168px;
     height: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   .product-card__image {
-    width: 100%;
+    width: auto;
     height: auto;
+    top: 57%;
+  }
+
+  .product-card__image--gramm_500 {
+    top: 57%;
+  }
+
+  .product-card__image--gramm_1000 {
+    top: 50%;
   }
 
   .product-card__title {
@@ -105,6 +122,21 @@
 
   .product-card__title {
     @include fontStyle(20px, 21px);
-    width: 145px;
+    width: 160px;
+    padding: 0 15px;
+  }
+
+  .product-card__image {
+    width: auto;
+    height: auto;
+    top: 54%;
+  }
+
+  .product-card__image--gramm_500 {
+    top: 53%;
+  }
+
+  .product-card__image--gramm_1000 {
+    top: 47%;
   }
 }

@@ -12,6 +12,7 @@
   padding-top: 26px;
   padding-bottom: 26px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -69,6 +70,7 @@
   .contacts__text {
     @include fontStyle(16px, 20px);
     text-align: right;
+    padding-bottom: 6px;
   }
 
   .contacts__frame {

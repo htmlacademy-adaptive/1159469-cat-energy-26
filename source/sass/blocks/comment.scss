@@ -1,5 +1,5 @@
 .comment {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .comment__textarea {
@@ -31,18 +31,22 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .comment__textarea {
     @include fontStyle(20px, 30px);
     min-height: 174px;
-    padding: 10px 19px;
+    padding: 7px 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
-    margin-bottom: 67px;
+    margin-bottom: 64px;
+  }
+
+  .comment__textarea {
+    padding: 10px 17px;
   }
 }

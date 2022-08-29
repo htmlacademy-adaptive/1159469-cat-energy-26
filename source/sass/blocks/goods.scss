@@ -2,8 +2,8 @@
   @include fontStyle(36px, 36px);
   font-weight: 400;
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 41px;
+  padding-top: 29px;
+  padding-bottom: 39px;
 }
 
 .goods__list {
@@ -16,7 +16,7 @@
 
 @media (min-width: $tablet-width) {
   .goods__wrapper {
-    padding-top: 64px;
+    padding-top: 59px;
   }
 
   .goods__title {
@@ -33,16 +33,16 @@
 
 @media (min-width: $desktop-width) {
   .goods__wrapper {
-    padding-top: 73px;
+    padding-top: 72px;
   }
 
   .goods__title {
     @include fontStyle(60px, 60px);
-    margin-bottom: 84px;
+    margin-bottom: 91px;
   }
 
   .goods__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 63px 80px;
+    gap: 70px 80px;
   }
 }

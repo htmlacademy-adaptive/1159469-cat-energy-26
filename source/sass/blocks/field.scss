@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   position: relative;
 }
 
@@ -19,8 +19,8 @@
 .field__input {
   @include fontStyle(16px, 18px);
   font-family: inherit;
-  margin-left: 12px;
-  padding: 13px 0 13px 15px;
+  margin-left: 15px;
+  padding: 12px 0 13px 15px;
   text-transform: uppercase;
   color: $tundora;
   border: 1px solid $mercury;
@@ -63,6 +63,14 @@
   }
 }
 
+.field__input--email {
+  margin-left: 13px;
+}
+
+.field__input--phone {
+  margin-left: 10px;
+}
+
 .field__icon {
   position: absolute;
   top: 50%;
@@ -78,11 +86,11 @@
 }
 
 .field--cat {
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 }
 
 .field--owner {
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -100,8 +108,16 @@
 
   .field__input {
     @include fontStyle(20px, 30px);
-    margin-left: 12px;
+    margin-left: 18px;
     padding: 9px 0 9px 19px;
+  }
+
+  .field__input--email {
+    margin-left: 19px;
+  }
+
+  .field__input--phone {
+    margin-left: 12px;
   }
 
   .field__icon--mail {
@@ -119,11 +135,23 @@
   }
 
   .field--owner {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .field__wrapper {
+    margin-bottom: 17px;
+  }
+
+  .field__wrapper--last {
+    margin-bottom: 0;
+  }
+
+  .field__input {
+    padding: 11px 0 11px 17px;
+  }
+
   .field__box {
     display: flex;
     justify-content: space-between;
@@ -137,5 +165,9 @@
   .field--cat {
     width: 570px;
     margin-bottom: 0;
+  }
+
+  .field--owner {
+    margin-bottom: 64px;
   }
 }

@@ -5,20 +5,24 @@
 }
 
 .form__fieldset-wrapper {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 
 .form__legend {
   @include fontStyle(24px, 26px);
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
+}
+
+.form__legend--checkbox {
+  margin-bottom: 32px;
 }
 
 .form__button {
   @include fontStyle(16px, 20px);
   width: 100%;
   margin-bottom: 21px;
-  padding: 7px 0;
+  padding: 10px 0;
   font-family: inherit;
 }
 
@@ -52,7 +56,7 @@
     @include fontStyle(20px, 20px);
     width: 282px;
     margin: 0;
-    padding: 13px 0;
+    padding: 16px 0;
   }
 
   .form__footnote {
@@ -63,7 +67,7 @@
   }
 
   .form__fieldset-wrapper {
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 }
 
@@ -74,8 +78,18 @@
 
   .form__fieldset-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 69px;
+    margin-bottom: 64px;
+  }
+
+  .form__button {
+    width: 569px;
+  }
+
+  .form__footnote {
+    left: 649px;
+    bottom: 18px;
   }
 }

@@ -97,6 +97,10 @@
   display: none;
 }
 
+.title-line--owner::after {
+  top: 28%;
+}
+
 
 @media (min-width: $tablet-width) {
   .title-line::after {
@@ -115,14 +119,25 @@
   .title-line--catalog::before {
     right: calc(100%);
   }
+
+  .title-line--owner::after {
+    top: 50%;
+    left: calc(100% + 46px);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .title-line::after {
+    top: 65%;
     left: calc(100% + 35px);
   }
 
   .title-line::before {
+    top: 65%;
     right: calc(100% + 40px);
+  }
+
+  .title-line--owner::after {
+    left: calc(100% + 46px);
   }
 }

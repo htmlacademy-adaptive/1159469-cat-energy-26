@@ -1,5 +1,6 @@
 .product-property {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -11,19 +12,23 @@
 
 @media (min-width: $tablet-width) {
   .product-property__price {
-    width: 155px;
+    min-width: 92px;
     margin-left: auto;
     text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .product-property {
+    padding-top: 10px;
+  }
+
   .product-property__type {
     width: 245px;
   }
 
   .product-property__price {
-    width: 80px;
+    min-width: 80px;
     text-align: left;
   }
 }
