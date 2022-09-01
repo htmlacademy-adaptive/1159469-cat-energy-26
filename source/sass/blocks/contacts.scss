@@ -49,6 +49,14 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  background-image: url("../img/location.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,6 +84,15 @@
   .contacts__frame {
     height: 400px;
   }
+
+  .contacts__map {
+    background-image: url("../img/location-tablet.jpg");
+    background-color: $basicGrey;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -96,5 +113,13 @@
 
   .contacts__text {
     text-align: left;
+  }
+
+  .contacts__map {
+    background-image: url("../img/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.jpg");
+    }
   }
 }

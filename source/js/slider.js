@@ -10,6 +10,7 @@ sliderControl.onmousedown = function(event) {
   sliderControl.style.top = event.pageY - (sliderControl.style.height / 2) + 'px';
   sliderControl.style.transform = 'translateY(-50%)';
   sliderControl.style.height = sliderWrapper.clientHeight + 'px';
+  moveAt(event);
 
   function moveAt(event) {
     sliderControl.style.left = event.pageX + 'px';
