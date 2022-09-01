@@ -2,6 +2,10 @@
   width: auto;
 }
 
+.main-header--divider {
+  border-bottom: 1px solid $alto;
+}
+
 .main-header__wrapper {
   max-width: $mobile-width;
   margin: 0 auto;
@@ -34,6 +38,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .main-header--divider {
+    border-bottom: none;
   }
 
   .main-header__wrapper {

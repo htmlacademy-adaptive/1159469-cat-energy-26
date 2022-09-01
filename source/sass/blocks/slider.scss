@@ -64,18 +64,18 @@
 .slider__gallery {
   position: absolute;
   top: 0;
-  background-color: $baseGalleryGrey;
 }
 
 .slider__gallery--before {
   left: 0;
   z-index: 1;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
 .slider__gallery--after {
   right: 0;
   z-index: 2;
-  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
 }
 
 @media (min-width: $tablet-width) {
@@ -83,19 +83,5 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
-  }
-
-  .slider__gallery {
-    background-color: transparent;
-  }
-
-  .slider__gallery--after {
-    background-image: linear-gradient(to top, $baseGalleryGrey 363px, $white 363px, $white 100%);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__gallery--after {
-    background-image: linear-gradient(to top, $basicGrey 373px, $white 373px, $white 100%);
   }
 }
