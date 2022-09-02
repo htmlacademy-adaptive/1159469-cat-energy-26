@@ -150,7 +150,8 @@
 @media (min-width: $desktop-width) {
   .program-type__list {
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 60px 80px;
+    align-items: start;
   }
 
   .program-type__item {

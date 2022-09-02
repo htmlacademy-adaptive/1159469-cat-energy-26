@@ -165,10 +165,11 @@
   .field__box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .field__wrapper {
       width: 570px;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -178,6 +179,6 @@
   }
 
   .field--owner {
-    margin-bottom: 64px;
+    margin-bottom: 44px;
   }
 }

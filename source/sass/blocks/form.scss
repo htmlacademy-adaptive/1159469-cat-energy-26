@@ -52,18 +52,23 @@
     margin-bottom: 57px;
   }
 
+  .form__button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .form__button {
     @include fontStyle(20px, 20px);
     width: 282px;
     margin: 0;
+    margin-right: 61px;
     padding: 16px 10px;
   }
 
   .form__footnote {
     @include fontStyle(16px, 16px);
-    position: absolute;
-    left: 384px;
-    bottom: 21px;
+    margin-right: 30px;
   }
 
   .form__fieldset-wrapper {
@@ -86,10 +91,6 @@
 
   .form__button {
     width: 569px;
-  }
-
-  .form__footnote {
-    left: 649px;
-    bottom: 18px;
+    margin-right: 80px;
   }
 }

@@ -69,8 +69,9 @@
 
 @media (min-width: $tablet-width) {
   .product-card {
+    --height: 20px;
     padding: 8px 37px 39px 39px;
-    background: linear-gradient(to top, $basicGrey 430px, $white 430px 100%);
+    background: linear-gradient(to bottom, $white 91px, $basicGrey 91px 100%);
   }
 
   .product-card__wrapper {
@@ -117,7 +118,7 @@
 @media (min-width: $desktop-width) {
   .product-card {
     padding: 0 38px 40px 39px;
-    background: linear-gradient(to top, $basicGrey 431px, $white 431px 100%);
+    background: linear-gradient(to bottom, $white 71px, $basicGrey 71px 100%);
   }
 
   .product-card__link--picture {
