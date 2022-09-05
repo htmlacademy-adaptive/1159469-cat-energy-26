@@ -105,8 +105,8 @@
   .main-nav__link {
     @include fontStyle(18px, 24px);
     font-weight: 400;
-    padding-top: 17px;
-    padding-bottom: 9px;
+    padding-top: 19px;
+    padding-bottom: 7px;
   }
 
   .main-nav__link--current {
@@ -121,8 +121,8 @@
 
   .main-nav__link {
     @include fontStyle(20px, 30px);
-    padding-top: 15px;
-    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 6px;
     background-color: transparent;
   }
 

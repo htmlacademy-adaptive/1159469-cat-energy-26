@@ -1,6 +1,6 @@
 .additional-product {
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 }
 
 .additional-product__wrapper {
@@ -32,19 +32,24 @@
 
 @media (min-width: $tablet-width) {
   .additional-product {
-    padding: 26px 38px 28px 38px;
+    padding: 27px 38px 27px 38px;
   }
 
   .additional-product__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .additional-product__title {
     @include fontStyle(20px, 20px);
     margin: 0;
+  }
+
+  .additional-product__list {
+    @include fontStyle(16px, 20px);
   }
 }
 
@@ -54,6 +59,7 @@
     padding-top: 14px;
     padding-bottom: 17px;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .additional-product__wrapper {

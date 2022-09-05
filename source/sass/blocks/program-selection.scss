@@ -3,6 +3,10 @@
   padding-bottom: 32px;
 }
 
+.program-selection {
+  overflow-x: hidden;
+}
+
 .program-selection__title {
   @include fontStyle(36px, 36px);
   font-weight: 400;
@@ -15,11 +19,12 @@
   margin: 0;
   margin-bottom: 39px;
   text-transform: uppercase;
+  width: 265px;
 }
 
 @media (min-width: $tablet-width) {
   .program-selection__wrapper {
-    padding-top: 64px;
+    padding-top: 60px;
     padding-bottom: 72px;
   }
 
@@ -41,7 +46,7 @@
 
 @media (min-width: $desktop-width) {
   .program-selection__wrapper {
-    padding-top: 73px;
+    padding-top: 71px;
     padding-bottom: 82px;
   }
 
@@ -50,6 +55,10 @@
   }
 
   .program-selection__title {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
+  }
+
+  .program-selection__text {
+    margin-bottom: 63px;
   }
 }

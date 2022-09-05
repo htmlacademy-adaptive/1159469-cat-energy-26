@@ -1,13 +1,13 @@
 .product-card {
-  padding-top: 19px;
+  padding-top: 21px;
   padding-bottom: 25px;
 }
 
 .product-card__wrapper {
   display: grid;
-  grid-template-columns: 140px 140px;
-  grid-template-rows: 56px 56px;
-  margin-bottom: 13px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 15px;
 }
 
 .product-card__link {
@@ -34,9 +34,17 @@
 .product-card__image {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.product-card__image--gramm_500 {
+  top: 60%;
+}
+
+.product-card__image--gramm_1000 {
+  top: 55%;
 }
 
 .product-card__title {
@@ -61,8 +69,9 @@
 
 @media (min-width: $tablet-width) {
   .product-card {
+    --height: 20px;
     padding: 8px 37px 39px 39px;
-    background: linear-gradient(to top, $basicGrey 430px, $white 430px 100%);
+    background: linear-gradient(to bottom, $white 91px, $basicGrey 91px 100%);
   }
 
   .product-card__wrapper {
@@ -76,12 +85,21 @@
   .product-card__link--picture {
     width: 168px;
     height: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 43px;
   }
 
   .product-card__image {
-    width: 100%;
+    width: auto;
     height: auto;
+    top: 62%;
+  }
+
+  .product-card__image--gramm_500 {
+    top: 62%;
+  }
+
+  .product-card__image--gramm_1000 {
+    top: 55%;
   }
 
   .product-card__title {
@@ -100,11 +118,30 @@
 @media (min-width: $desktop-width) {
   .product-card {
     padding: 0 38px 40px 39px;
-    background: linear-gradient(to top, $basicGrey 431px, $white 431px 100%);
+    background: linear-gradient(to bottom, $white 71px, $basicGrey 71px 100%);
+  }
+
+  .product-card__link--picture {
+    margin-bottom: 39px;
   }
 
   .product-card__title {
     @include fontStyle(20px, 21px);
-    width: 145px;
+    width: 160px;
+    padding: 0 15px;
+  }
+
+  .product-card__image {
+    width: auto;
+    height: auto;
+    top: 54%;
+  }
+
+  .product-card__image--gramm_500 {
+    top: 53%;
+  }
+
+  .product-card__image--gramm_1000 {
+    top: 47%;
   }
 }

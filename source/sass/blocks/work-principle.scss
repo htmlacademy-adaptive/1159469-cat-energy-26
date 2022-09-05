@@ -57,6 +57,10 @@
   padding: 3px 0 3px 80px;
   font-family: "Arial", sans-serif;
   color: $tundora;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -104,9 +108,17 @@
     z-index: -1;
   }
 
+  .work-principle__item--icon_leaf::after {
+    right: 23px;
+  }
+
   .work-principle__text {
     @include fontStyle(16px, 24px);
     padding: 0;
+
+    br {
+      display: block;
+    }
   }
 }
 

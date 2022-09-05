@@ -22,6 +22,11 @@
   }
 }
 
+.copyright__icon {
+  min-width: min-content;
+  margin-left: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;
