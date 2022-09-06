@@ -88,11 +88,11 @@
   opacity: 0.3;
 }
 
-.program-type__link:hover .icon-line {
+.program-type__link:hover .program-type__icon-line {
   transform: scale(1.44, 1);
 }
 
-.program-type__link:hover .icon-triangle {
+.program-type__link:hover .program-type__icon-triangle {
   transform: translate(8px);
 }
 
