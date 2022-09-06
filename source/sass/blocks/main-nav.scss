@@ -52,11 +52,6 @@
     position: relative;
   }
 
-  .main-header__wrapper {
-    position: relative;
-    z-index: 3;
-  }
-
   .main-nav::before {
     position: absolute;
     content: "";
